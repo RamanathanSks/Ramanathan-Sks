@@ -1,0 +1,181 @@
+.spacer {
+    flex: 1 1 auto;
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+mat-sidenav-conatiner,
+mat-sidenav-content,
+mat-sidenav {
+    height: 100%;
+    background-color: rgba(145, 145, 145, 0.137);
+}
+
+.sidenavList {
+    -webkit-backdrop-filter: blur(50px);
+    backdrop-filter: blur(50px);
+}
+
+.fontcl {
+    color: rgb(243, 243, 243);
+    opacity: 80%;
+}
+
+.fontcl:hover {
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    opacity: 100%;
+    zoom: 105%;
+    color: white;
+}
+
+.button {
+    margin-bottom: 17px;
+}
+
+li {
+    text-shadow: rgba(0, 0, 0, 0.616);
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: small;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.title {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 23px;
+    font-optical-sizing: auto;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: rgb(230, 230, 230);
+}
+
+.title:hover {
+    color: white;
+    zoom: 101%;
+}
+
+mat-sidenav {
+    width: 250px;
+}
+
+.toolbar {
+    position: fixed;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 1000;
+    -webkit-background-color: rgba(39, 39, 39, 0.40);
+    -moz-background-color: rgba(39, 39, 39, 0.40);
+    -o-background-color: rgba(39, 39, 39, 0.40);
+    background-color: rgba(39, 39, 39, 0.40);
+    -webkit-backdrop-filter: blur(10px) contrast(90%);
+    -moz-backdrop-filter: blur(10px) contrast(90%);
+    -o-backdrop-filter: blur(10px) contrast(90%);
+    backdrop-filter: blur(10px) contrast(90%);
+    -webkit-transition: all .9s ease-in-out !important;
+    -moz-transition: all .9s ease-in-out !important;
+    -o-transition: all .9s ease-in-out !important;
+    transition: all .9s ease-in-out !important;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    height: 130px;
+    padding-top: 20px;
+    line-height: 50px;
+    background-color: rgba(15, 15, 15, 0.692);
+    -webkit-backdrop-filter: blur(10px);
+    -moz-backdrop-filter: blur(10px);
+    -o-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    -webkit-transition: all .9s ease-in-out !important;
+    -moz-transition: all .9s ease-in-out !important;
+    -o-transition: all .9s ease-in-out !important;
+    transition: all .9s ease-in-out !important;
+}
+
+.footTxt {
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 600;
+    line-height: 22px;
+    animation: type .5s alternate infinite;
+}
+
+.footCon {
+    color: ivory;
+    cursor: pointer;
+}
+
+
+/* social media link */
+
+.smlnk {
+    text-decoration: none;
+}
+
+
+/* sidenav social media link */
+
+.sidenavSM {
+    text-decoration: none;
+}
+
+
+/* sidenav */
+
+.sidelink {
+    font-family: "Roboto Condensed", sans-serif;
+    text-transform: uppercase;
+    height: 50px;
+    color: rgb(194, 194, 194);
+}
+
+.container {
+    width: auto;
+    text-align: center;
+    max-width: 680px;
+    padding: 0 15px;
+}
+
+mat-sidenav-container {
+    margin: 0%;
+}
+
+.nav-item {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+main {
+    padding: 0;
+    background-color: rgb(243, 243, 243);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a.hover.a.active {
+    color: rgb(255, 255, 255);
+}
+
+mat-toolbar {
+    /* background-color: rgba(201, 195, 195, 0.205); */
+    height: 60px;
+}
+
+@media(max-width:950px) {
+    mat-toolbar {
+        border-radius: 0px;
+    }
+}

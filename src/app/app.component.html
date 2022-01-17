@@ -1,0 +1,115 @@
+<mat-sidenav-container>
+    <mat-sidenav class="sidenavList" #sidenav role="navigation">
+        <div style="height: 100px;">
+            <!-- <img height="160" width="100%" src=" https://firebasestorage.googleapis.com/v0/b/ram-port.appspot.com/o/sidenavtop_-_Copy-removebg.png?alt=media&token=22c78e14-84c2-4c3c-879e-2005e5e6c495" alt=""> -->
+        </div>
+
+        <mat-list (click)="sidenav.toggle()">
+            <mat-divider></mat-divider>
+            <mat-list-item matRipple>
+                <div mat-line class="sidelink" routerLink=''>
+                    <mat-icon mat-list-icon><img src="https://img.icons8.com/plumpy/22/000000/home-page.png" />
+                    </mat-icon>&nbsp;&nbsp;&nbsp;<label>HOME</label>
+                </div>
+            </mat-list-item>
+            <mat-list-item matRipple>
+
+                <div mat-line class="sidelink" routerLink='gallery'>
+                    <mat-icon mat-list-icon><img src="https://img.icons8.com/plumpy/22/000000/image-gallery.png" /></mat-icon>
+                    &nbsp;&nbsp;<label>GALLERY</label>
+                </div>
+            </mat-list-item>
+            <mat-list-item matRipple>
+
+                <div mat-line class="sidelink" routerLink='About'>
+                    <mat-icon mat-list-icon><img src="https://img.icons8.com/plumpy/22/000000/about.png" /></mat-icon>
+                    &nbsp;&nbsp;<label>ABOUT</label>
+                </div>
+            </mat-list-item>
+
+        </mat-list>
+        <mat-divider></mat-divider>
+        <br/>
+        <footer>
+            <div class="container">
+                <!-- Siednav footer -->
+                <span class="text-muted"><a class="sidenavSM" target="_blank" href="https://github.com/Ramanathan87"><img
+              src="https://img.icons8.com/fluent/35/000000/github.png" /></a></span>&nbsp;&nbsp;
+                <span class="text-muted"><a class="sidenavSM" target="_blank" href="https://twitter.com/RamanathanSks"><img
+              src="https://img.icons8.com/fluent/35/000000/twitter.png" /></a></span>&nbsp;&nbsp;
+                <span class="text-muted"><a class="sidenavSM" target="_blank" href="https://www.instagram.com/ramanathan_sks/"><img
+              src="https://img.icons8.com/fluent/35/000000/instagram-new.png" /></a></span>&nbsp;&nbsp;
+                <span class="text-muted"><a class="sidenavSM" target="_blank" href="https://www.facebook.com/ramakiphotograph"><img
+              src="https://img.icons8.com/fluent/35/000000/facebook-new.png" /></a></span>&nbsp;&nbsp;
+                <span class="text-muted"><a class="sidenavSM" target="_blank" href="https://500px.com/p/ramanathansks"><img
+              src="https://img.icons8.com/windows/30/000000/500px-new.png" /></a></span>
+            </div>
+        </footer>
+    </mat-sidenav>
+
+
+    <!-- toolbar -->
+    <mat-sidenav-content>
+        <mat-toolbar class="toolbar" *ngIf="offsetFlag" matRipple>
+            <div fxHide.gt-xs>
+                <button mat-icon-button (click)="sidenav.toggle()">
+          <img src="https://img.icons8.com/plumpy/24/000000/menu--v1.png"/>
+        </button>
+            </div>
+            <div>
+                <a routerLink=''><span class="title">RAMANATHAN</span></a>
+            </div>
+            <div fxFlex fxLayout fxLayoutAlign="end" fxHide.xs>
+                <ul fxLayout fxLayoutGap="15px" class="nav-item">
+                    <li>
+                        <a class="fontcl" routerLink=''>HOME</a>
+                    </li>
+                    <li>
+                        <a class="fontcl" routerLink='gallery'>GALLERY</a>
+                    </li>
+                    <li>
+                        <a class="fontcl" routerLink='About'>ABOUT</a>
+                    </li>
+                    <li>
+                        <a class="fontcl" href='#sm'>CONNECT</a>
+                    </li>
+
+                </ul>
+            </div>
+        </mat-toolbar>
+
+        <main>
+            <router-outlet>
+
+            </router-outlet>
+
+        </main>
+        <footer matRipple class="footer" id="sm">
+            <div class="footCon">
+                <!-- routerLink='contact' -->
+                <h1 class="footTxt">CONNECT</h1>
+            </div>
+            <div class="container">
+                <!-- FOOter -->
+                <span class="text-muted" matTooltip="github"><a class="smlnk" target="_blank" href="https://github.com/Ramanathan87"><img
+              src="https://img.icons8.com/fluent/42/000000/github.png" /></a></span>&nbsp;&nbsp;
+
+                <span class="text-muted" matTooltip="twitter"><a class="smlnk" target="_blank" href="https://twitter.com/RamanathanSks"><img
+              src="https://img.icons8.com/fluent/42/000000/twitter.png" /></a></span>&nbsp;&nbsp;
+
+                <span class="text-muted"><a class="smlnk" ><img
+          (mouseenter)="openbarcode()" src="https://img.icons8.com/fluent/42/000000/instagram-new.png" /></a></span>&nbsp;&nbsp;
+
+                <span class="text-muted" matTooltip="facebook"><a class="smlnk" target="_blank" href="https://www.facebook.com/ramakiphotograph"><img
+              src="https://img.icons8.com/fluent/42/000000/facebook-new.png" /></a></span>&nbsp;&nbsp;
+
+                <span class="text-muted" matTooltip="500px">
+                    <a class="smlnk" target="_blank" href="https://500px.com/p/ramanathansks">
+                        <img src="https://img.icons8.com/windows/37/000000/500px-new.png" />
+                    </a>
+                </span>
+
+            </div>
+        </footer>
+    </mat-sidenav-content>
+</mat-sidenav-container>

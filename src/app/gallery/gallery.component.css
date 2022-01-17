@@ -1,0 +1,72 @@
+.carousel-item {
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.space {
+    height: 2px;
+}
+
+img {
+    image-rendering: optimizeSpeed;
+    object-fit: fill;
+    cursor: pointer;
+}
+
+mat-grid-tile,
+img {
+    image-rendering: optimizeQuality;
+    width: auto;
+    height: auto;
+    object-fit: fill;
+}
+
+.box1 {
+    height: 100vh;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-background-position: center;
+    -moz-background-position: center;
+    -o-background-position: center;
+    background-position: center;
+    display: table;
+    background-attachment: fixed;
+}
+
+@supports (-webkit-touch-callout: none) {
+    .box1 {
+        background-attachment: local;
+    }
+}
+
+@supports not (-webkit-touch-callout: none) {
+    .box1 {
+        background-attachment: fixed;
+    }
+}
+
+@media only screen and (max-device-width: 1366px) {
+    .space {
+        height: 45px;
+    }
+}
+
+.tiles {
+    backdrop-filter: blur(20px) contrast(110%);
+}
