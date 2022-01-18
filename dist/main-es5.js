@@ -17,7 +17,7 @@
     /***/
     function _(module, exports, __webpack_require__) {
       module.exports = __webpack_require__(
-      /*! K:\Angular Apps\rdem\src\main.ts */
+      /*! K:\Angular Apps\Ramanathan-Sks\src\main.ts */
       "zUnb");
       /***/
     },
@@ -303,9 +303,9 @@
       AboutComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
         type: AboutComponent,
         selectors: [["app-about"]],
-        decls: 20,
+        decls: 18,
         vars: 0,
-        consts: [[1, "about"], ["id", "about_me_title", 1, "abt"], [1, "about_me"], ["id", "about_me", 2, "text-align", "justify", "padding", "5px", "font-size", "x-large"], [2, "height", "250px"]],
+        consts: [[1, "about"], ["id", "about_me_title", 1, "abt"], [1, "about_me"]],
         template: function AboutComponent_Template(rf, ctx) {
           if (rf & 1) {
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "html");
@@ -318,7 +318,7 @@
 
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "h2", 1);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5, " Hello Gens, Welcome to My Page.. ");
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5, " Hello Gens, Welcome to my Page.. ");
 
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
@@ -330,40 +330,34 @@
 
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "div", 2);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "p", 3);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](9, " Hi peps a warm welcome to my portfolio, Where you can find only links to my social media and some of my work :) and this entire portfolio is build myself and ofCourse Google ");
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](10, "\xA0\xA0 Hi peps a warm welcome to my portfolio where you find only some of my work and links to my social media :) and this entire portfolio is build my me and OfCourse Google ");
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](10, "br");
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](11, "br");
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](11, "Well this is About me right !... So-So here we go\u2026 ");
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](12, "Well this is About me right ! Allright here we go\u2026 ");
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](12, "br");
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](13, "br");
-
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](14, " Yes, I\u2019m An Instrumentation Engineer who is passionate about photography and works in IT\u2026. ");
-
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](15, "div", 4);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](13, "I\u2019m an Instrumentation Engineer, Who is passionate about photography and works in IT. ");
 
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](14, "br");
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](15, "br");
 
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](16, "br");
 
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](17, "br");
-
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](18, "br");
-
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](19, "br");
 
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
           }
         },
-        styles: [".abt[_ngcontent-%COMP%] {\r\n    padding-top: 65px;\r\n    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;\r\n    font-size: 50px;\r\n    color: rgb(23, 32, 23);\r\n    opacity: 80%;\r\n    text-align: center;\r\n}\r\n\r\n.about[_ngcontent-%COMP%] {\r\n    padding-top: 2%;\r\n}\r\n\r\n.about_me[_ngcontent-%COMP%] {\r\n    height: auto;\r\n}\r\n\r\nbody[_ngcontent-%COMP%] {\r\n    margin: 0;\r\n    padding: 0;\r\n    perspective: 1px;\r\n    transform-style: preserve-3d;\r\n    image-rendering: optimizeSpeed;\r\n    font-family: futura-pt;\r\n    font-weight: 300;\r\n    font-style: normal;\r\n    font-size: 20px;\r\n    letter-spacing: 0em;\r\n    line-height: 1.55em;\r\n    text-transform: none;\r\n}\r\n\r\nbody[_ngcontent-%COMP%], html[_ngcontent-%COMP%] {\r\n    margin: 0;\r\n    padding: 0;\r\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFib3V0LmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxpQkFBaUI7SUFDakIsNERBQTREO0lBQzVELGVBQWU7SUFDZixzQkFBc0I7SUFDdEIsWUFBWTtJQUNaLGtCQUFrQjtBQUN0Qjs7QUFFQTtJQUNJLGVBQWU7QUFDbkI7O0FBRUE7SUFDSSxZQUFZO0FBQ2hCOztBQUVBO0lBQ0ksU0FBUztJQUNULFVBQVU7SUFDVixnQkFBZ0I7SUFDaEIsNEJBQTRCO0lBQzVCLDhCQUE4QjtJQUM5QixzQkFBc0I7SUFDdEIsZ0JBQWdCO0lBQ2hCLGtCQUFrQjtJQUNsQixlQUFlO0lBQ2YsbUJBQW1CO0lBQ25CLG1CQUFtQjtJQUNuQixvQkFBb0I7QUFDeEI7O0FBRUE7O0lBRUksU0FBUztJQUNULFVBQVU7QUFDZCIsImZpbGUiOiJhYm91dC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmFidCB7XHJcbiAgICBwYWRkaW5nLXRvcDogNjVweDtcclxuICAgIGZvbnQtZmFtaWx5OiAnU2Vnb2UgVUknLCBUYWhvbWEsIEdlbmV2YSwgVmVyZGFuYSwgc2Fucy1zZXJpZjtcclxuICAgIGZvbnQtc2l6ZTogNTBweDtcclxuICAgIGNvbG9yOiByZ2IoMjMsIDMyLCAyMyk7XHJcbiAgICBvcGFjaXR5OiA4MCU7XHJcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbn1cclxuXHJcbi5hYm91dCB7XHJcbiAgICBwYWRkaW5nLXRvcDogMiU7XHJcbn1cclxuXHJcbi5hYm91dF9tZSB7XHJcbiAgICBoZWlnaHQ6IGF1dG87XHJcbn1cclxuXHJcbmJvZHkge1xyXG4gICAgbWFyZ2luOiAwO1xyXG4gICAgcGFkZGluZzogMDtcclxuICAgIHBlcnNwZWN0aXZlOiAxcHg7XHJcbiAgICB0cmFuc2Zvcm0tc3R5bGU6IHByZXNlcnZlLTNkO1xyXG4gICAgaW1hZ2UtcmVuZGVyaW5nOiBvcHRpbWl6ZVNwZWVkO1xyXG4gICAgZm9udC1mYW1pbHk6IGZ1dHVyYS1wdDtcclxuICAgIGZvbnQtd2VpZ2h0OiAzMDA7XHJcbiAgICBmb250LXN0eWxlOiBub3JtYWw7XHJcbiAgICBmb250LXNpemU6IDIwcHg7XHJcbiAgICBsZXR0ZXItc3BhY2luZzogMGVtO1xyXG4gICAgbGluZS1oZWlnaHQ6IDEuNTVlbTtcclxuICAgIHRleHQtdHJhbnNmb3JtOiBub25lO1xyXG59XHJcblxyXG5ib2R5LFxyXG5odG1sIHtcclxuICAgIG1hcmdpbjogMDtcclxuICAgIHBhZGRpbmc6IDA7XHJcbn0iXX0= */"]
+        styles: [".abt[_ngcontent-%COMP%] {\r\n    padding-top: 65px;\r\n    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;\r\n    font-size: 40px;\r\n    color: rgb(23, 32, 23);\r\n    opacity: 80%;\r\n    text-align: center;\r\n    font-style: italic;\r\n    line-height: 50px;\r\n}\r\n\r\n.about[_ngcontent-%COMP%] {\r\n    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;\r\n    padding: 2%;\r\n}\r\n\r\n.about_me[_ngcontent-%COMP%] {\r\n    height: auto;\r\n}\r\n\r\nbody[_ngcontent-%COMP%] {\r\n    margin: 0;\r\n    padding: 0;\r\n    perspective: 1px;\r\n    height: 100vh;\r\n    transform-style: preserve-3d;\r\n    image-rendering: optimizeSpeed;\r\n    font-family: futura-pt;\r\n    font-weight: 300;\r\n    font-style: normal;\r\n    font-size: 20px;\r\n    letter-spacing: 0em;\r\n    line-height: 1.55em;\r\n    text-transform: none;\r\n}\r\n\r\nbody[_ngcontent-%COMP%], html[_ngcontent-%COMP%] {\r\n    margin: 0;\r\n    padding: 0;\r\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFib3V0LmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxpQkFBaUI7SUFDakIsNERBQTREO0lBQzVELGVBQWU7SUFDZixzQkFBc0I7SUFDdEIsWUFBWTtJQUNaLGtCQUFrQjtJQUNsQixrQkFBa0I7SUFDbEIsaUJBQWlCO0FBQ3JCOztBQUVBO0lBQ0ksNERBQTREO0lBQzVELFdBQVc7QUFDZjs7QUFFQTtJQUNJLFlBQVk7QUFDaEI7O0FBRUE7SUFDSSxTQUFTO0lBQ1QsVUFBVTtJQUNWLGdCQUFnQjtJQUNoQixhQUFhO0lBQ2IsNEJBQTRCO0lBQzVCLDhCQUE4QjtJQUM5QixzQkFBc0I7SUFDdEIsZ0JBQWdCO0lBQ2hCLGtCQUFrQjtJQUNsQixlQUFlO0lBQ2YsbUJBQW1CO0lBQ25CLG1CQUFtQjtJQUNuQixvQkFBb0I7QUFDeEI7O0FBRUE7O0lBRUksU0FBUztJQUNULFVBQVU7QUFDZCIsImZpbGUiOiJhYm91dC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmFidCB7XHJcbiAgICBwYWRkaW5nLXRvcDogNjVweDtcclxuICAgIGZvbnQtZmFtaWx5OiAnU2Vnb2UgVUknLCBUYWhvbWEsIEdlbmV2YSwgVmVyZGFuYSwgc2Fucy1zZXJpZjtcclxuICAgIGZvbnQtc2l6ZTogNDBweDtcclxuICAgIGNvbG9yOiByZ2IoMjMsIDMyLCAyMyk7XHJcbiAgICBvcGFjaXR5OiA4MCU7XHJcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgICBmb250LXN0eWxlOiBpdGFsaWM7XHJcbiAgICBsaW5lLWhlaWdodDogNTBweDtcclxufVxyXG5cclxuLmFib3V0IHtcclxuICAgIGZvbnQtZmFtaWx5OiAnU2Vnb2UgVUknLCBUYWhvbWEsIEdlbmV2YSwgVmVyZGFuYSwgc2Fucy1zZXJpZjtcclxuICAgIHBhZGRpbmc6IDIlO1xyXG59XHJcblxyXG4uYWJvdXRfbWUge1xyXG4gICAgaGVpZ2h0OiBhdXRvO1xyXG59XHJcblxyXG5ib2R5IHtcclxuICAgIG1hcmdpbjogMDtcclxuICAgIHBhZGRpbmc6IDA7XHJcbiAgICBwZXJzcGVjdGl2ZTogMXB4O1xyXG4gICAgaGVpZ2h0OiAxMDB2aDtcclxuICAgIHRyYW5zZm9ybS1zdHlsZTogcHJlc2VydmUtM2Q7XHJcbiAgICBpbWFnZS1yZW5kZXJpbmc6IG9wdGltaXplU3BlZWQ7XHJcbiAgICBmb250LWZhbWlseTogZnV0dXJhLXB0O1xyXG4gICAgZm9udC13ZWlnaHQ6IDMwMDtcclxuICAgIGZvbnQtc3R5bGU6IG5vcm1hbDtcclxuICAgIGZvbnQtc2l6ZTogMjBweDtcclxuICAgIGxldHRlci1zcGFjaW5nOiAwZW07XHJcbiAgICBsaW5lLWhlaWdodDogMS41NWVtO1xyXG4gICAgdGV4dC10cmFuc2Zvcm06IG5vbmU7XHJcbn1cclxuXHJcbmJvZHksXHJcbmh0bWwge1xyXG4gICAgbWFyZ2luOiAwO1xyXG4gICAgcGFkZGluZzogMDtcclxufSJdfQ== */"]
       });
       /***/
     },
@@ -398,7 +392,7 @@
 
       var _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
       /*! @angular/fire/firestore */
-      "wD+u");
+      "I/3d");
 
       var ImageserviceService = /*#__PURE__*/function () {
         function ImageserviceService(firedb) {
@@ -842,7 +836,7 @@
 
       var _angular_flex_layout_extended__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
       /*! @angular/flex-layout/extended */
-      "ura0");
+      "znSr");
 
       function GalleryComponent_mat_progress_bar_1_Template(rf, ctx) {
         if (rf & 1) {
@@ -1103,7 +1097,7 @@
         selectors: [["app-gallery"]],
         decls: 5,
         vars: 2,
-        consts: [["style", "height: 10px;", "class", "example-margin", 3, "color", "mode", 4, "ngIf"], [1, "space"], ["lightbox-group", "", 4, "ngIf"], [1, "example-margin", 2, "height", "10px", 3, "color", "mode"], ["lightbox-group", ""], ["id", "carouselExampleFade", "data-bs-ride", "carousel", 1, "carousel", "slide", "carousel-fade"], [1, "carousel-indicators"], ["type", "button", "data-bs-target", "#carouselExampleIndicators", "data-bs-slide-to", "0", "aria-current", "true", "aria-label", "Slide 1", 1, "active"], ["type", "button", "data-bs-target", "#carouselExampleIndicators", "data-bs-slide-to", "1", "aria-label", "Slide 2"], ["type", "button", "data-bs-target", "#carouselExampleIndicators", "data-bs-slide-to", "2", "aria-label", "Slide 3"], ["type", "button", "data-bs-target", "#carouselExampleIndicators", "data-bs-slide-to", "3", "aria-label", "Slide 4"], ["type", "button", "data-bs-target", "#carouselExampleIndicators", "data-bs-slide-to", "4", "aria-label", "Slide 5"], [1, "carousel-inner"], [1, "carousel-item", "active"], ["loading", "lazy", "alt", "img1", 1, "d-block", "w-100", 3, "src"], [1, "carousel-item"], ["loading", "lazy", "alt", "img2", 1, "d-block", "w-100", 3, "src"], ["loading", "lazy", "alt", "img3", 1, "d-block", "w-100", 3, "src"], ["loading", "lazy", "alt", "img4", 1, "d-block", "w-100", 3, "src"], ["loading", "lazy", "alt", "img5", 1, "d-block", "w-100", 3, "src"], ["type", "button", "data-bs-target", "#carouselExampleFade", "data-bs-slide", "prev", 1, "carousel-control-prev"], ["aria-hidden", "true", 1, "carousel-control-prev-icon"], [1, "visually-hidden"], ["type", "button", "data-bs-target", "#carouselExampleFade", "data-bs-slide", "next", 1, "carousel-control-next"], ["aria-hidden", "true", 1, "carousel-control-next-icon"], ["cols", "2", "rowHeight", "1.9:1.5 ", 1, "tiles"], [3, "ngStyle", 4, "ngFor", "ngForOf"], ["id", "imgList", 4, "ngFor", "ngForOf"], [3, "ngStyle"], ["loading", "lazy", "lightbox", "", "alt", "img", 1, "d-block", "w-100", 3, "src"], ["id", "imgList"], ["loading", "lazy", 1, "box1", 3, "ngStyle"]],
+        consts: [["style", "height: 7px;", "class", "example-margin;", 3, "color", "mode", 4, "ngIf"], [1, "space"], ["lightbox-group", "", 4, "ngIf"], [1, "example-margin;", 2, "height", "7px", 3, "color", "mode"], ["lightbox-group", ""], ["id", "carouselExampleFade", "data-bs-ride", "carousel", 1, "carousel", "slide", "carousel-fade"], [1, "carousel-indicators"], ["type", "button", "data-bs-target", "#carouselExampleIndicators", "data-bs-slide-to", "0", "aria-current", "true", "aria-label", "Slide 1", 1, "active"], ["type", "button", "data-bs-target", "#carouselExampleIndicators", "data-bs-slide-to", "1", "aria-label", "Slide 2"], ["type", "button", "data-bs-target", "#carouselExampleIndicators", "data-bs-slide-to", "2", "aria-label", "Slide 3"], ["type", "button", "data-bs-target", "#carouselExampleIndicators", "data-bs-slide-to", "3", "aria-label", "Slide 4"], ["type", "button", "data-bs-target", "#carouselExampleIndicators", "data-bs-slide-to", "4", "aria-label", "Slide 5"], [1, "carousel-inner"], [1, "carousel-item", "active"], ["loading", "lazy", "alt", "img1", 1, "d-block", "w-100", 3, "src"], [1, "carousel-item"], ["loading", "lazy", "alt", "img2", 1, "d-block", "w-100", 3, "src"], ["loading", "lazy", "alt", "img3", 1, "d-block", "w-100", 3, "src"], ["loading", "lazy", "alt", "img4", 1, "d-block", "w-100", 3, "src"], ["loading", "lazy", "alt", "img5", 1, "d-block", "w-100", 3, "src"], ["type", "button", "data-bs-target", "#carouselExampleFade", "data-bs-slide", "prev", 1, "carousel-control-prev"], ["aria-hidden", "true", 1, "carousel-control-prev-icon"], [1, "visually-hidden"], ["type", "button", "data-bs-target", "#carouselExampleFade", "data-bs-slide", "next", 1, "carousel-control-next"], ["aria-hidden", "true", 1, "carousel-control-next-icon"], ["cols", "2", "rowHeight", "1.9:1.5 ", 1, "tiles"], [3, "ngStyle", 4, "ngFor", "ngForOf"], ["id", "imgList", 4, "ngFor", "ngForOf"], [3, "ngStyle"], ["loading", "lazy", "lightbox", "", "alt", "img", 1, "d-block", "w-100", 3, "src"], ["id", "imgList"], ["loading", "lazy", 1, "box1", 3, "ngStyle"]],
         template: function GalleryComponent_Template(rf, ctx) {
           if (rf & 1) {
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "html");
@@ -1257,7 +1251,7 @@
 
       var _angular_flex_layout_extended__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(
       /*! @angular/flex-layout/extended */
-      "ura0");
+      "znSr");
       /* harmony import */
 
 
@@ -1269,7 +1263,7 @@
 
       var _angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(
       /*! @angular/flex-layout/flex */
-      "VDRc");
+      "XiUz");
 
       function AppComponent_mat_toolbar_51_Template(rf, ctx) {
         if (rf & 1) {
@@ -1461,7 +1455,7 @@
         },
         decls: 78,
         vars: 1,
-        consts: [["role", "navigation", 1, "sidenavList"], ["sidenav", ""], [2, "height", "100px"], [3, "click"], ["matRipple", ""], ["mat-line", "", "routerLink", "", 1, "sidelink"], ["mat-list-icon", ""], ["src", "https://img.icons8.com/plumpy/22/000000/home-page.png"], ["mat-line", "", "routerLink", "gallery", 1, "sidelink"], ["src", "https://img.icons8.com/plumpy/22/000000/image-gallery.png"], ["mat-line", "", "routerLink", "About", 1, "sidelink"], ["src", "https://img.icons8.com/plumpy/22/000000/about.png"], [1, "container"], [1, "text-muted"], ["target", "_blank", "href", "https://github.com/Ramanathan87", 1, "sidenavSM"], ["src", "https://img.icons8.com/fluent/35/000000/github.png"], ["target", "_blank", "href", "https://twitter.com/RamanathanSks", 1, "sidenavSM"], ["src", "https://img.icons8.com/fluent/35/000000/twitter.png"], ["target", "_blank", "href", "https://www.instagram.com/ramanathan_sks/", 1, "sidenavSM"], ["src", "https://img.icons8.com/fluent/35/000000/instagram-new.png"], ["target", "_blank", "href", "https://www.facebook.com/ramakiphotograph", 1, "sidenavSM"], ["src", "https://img.icons8.com/fluent/35/000000/facebook-new.png"], ["target", "_blank", "href", "https://500px.com/p/ramanathansks", 1, "sidenavSM"], ["src", "https://img.icons8.com/windows/30/000000/500px-new.png"], ["class", "toolbar", "matRipple", "", 4, "ngIf"], ["matRipple", "", "id", "sm", 1, "footer"], [1, "footCon"], [1, "footTxt"], ["matTooltip", "github", 1, "text-muted"], ["target", "_blank", "href", "https://github.com/Ramanathan87", 1, "smlnk"], ["src", "https://img.icons8.com/fluent/42/000000/github.png"], ["matTooltip", "twitter", 1, "text-muted"], ["target", "_blank", "href", "https://twitter.com/RamanathanSks", 1, "smlnk"], ["src", "https://img.icons8.com/fluent/42/000000/twitter.png"], [1, "smlnk"], ["src", "https://img.icons8.com/fluent/42/000000/instagram-new.png", 3, "mouseenter"], ["matTooltip", "facebook", 1, "text-muted"], ["target", "_blank", "href", "https://www.facebook.com/ramakiphotograph", 1, "smlnk"], ["src", "https://img.icons8.com/fluent/42/000000/facebook-new.png"], ["matTooltip", "500px", 1, "text-muted"], ["target", "_blank", "href", "https://500px.com/p/ramanathansks", 1, "smlnk"], ["src", "https://img.icons8.com/windows/37/000000/500px-new.png"], ["matRipple", "", 1, "toolbar"], ["fxHide.gt-xs", ""], ["mat-icon-button", "", 3, "click"], ["src", "https://img.icons8.com/plumpy/24/000000/menu--v1.png"], ["routerLink", ""], [1, "title"], ["fxFlex", "", "fxLayout", "", "fxLayoutAlign", "end", "fxHide.xs", ""], ["fxLayout", "", "fxLayoutGap", "15px", 1, "nav-item"], ["routerLink", "", 1, "fontcl"], ["routerLink", "gallery", 1, "fontcl"], ["routerLink", "About", 1, "fontcl"], ["href", "#sm", 1, "fontcl"]],
+        consts: [["role", "navigation", 1, "sidenavList"], ["sidenav", ""], [2, "height", "100px"], [3, "click"], ["matRipple", ""], ["mat-line", "", "routerLink", "", 1, "sidelink"], ["mat-list-icon", ""], ["src", "https://img.icons8.com/plumpy/22/000000/home-page.png"], ["mat-line", "", "routerLink", "gallery", 1, "sidelink"], ["src", "https://img.icons8.com/plumpy/22/000000/image-gallery.png"], ["mat-line", "", "routerLink", "about", 1, "sidelink"], ["src", "https://img.icons8.com/plumpy/22/000000/about.png"], [1, "container"], [1, "text-muted"], ["target", "_blank", "href", "https://github.com/Ramanathan87", 1, "sidenavSM"], ["src", "https://img.icons8.com/fluent/35/000000/github.png"], ["target", "_blank", "href", "https://twitter.com/RamanathanSks", 1, "sidenavSM"], ["src", "https://img.icons8.com/fluent/35/000000/twitter.png"], ["target", "_blank", "href", "https://www.instagram.com/ramanathan_sks/", 1, "sidenavSM"], ["src", "https://img.icons8.com/fluent/35/000000/instagram-new.png"], ["target", "_blank", "href", "https://www.facebook.com/ramakiphotograph", 1, "sidenavSM"], ["src", "https://img.icons8.com/fluent/35/000000/facebook-new.png"], ["target", "_blank", "href", "https://500px.com/p/ramanathansks", 1, "sidenavSM"], ["src", "https://img.icons8.com/windows/30/000000/500px-new.png"], ["class", "toolbar", "matRipple", "", 4, "ngIf"], ["matRipple", "", "id", "sm", 1, "footer"], [1, "footCon"], [1, "footTxt"], ["matTooltip", "github", 1, "text-muted"], ["target", "_blank", "href", "https://github.com/Ramanathan87", 1, "smlnk"], ["src", "https://img.icons8.com/fluent/42/000000/github.png"], ["matTooltip", "twitter", 1, "text-muted"], ["target", "_blank", "href", "https://twitter.com/RamanathanSks", 1, "smlnk"], ["src", "https://img.icons8.com/fluent/42/000000/twitter.png"], [1, "smlnk"], ["src", "https://img.icons8.com/fluent/42/000000/instagram-new.png", 3, "mouseenter"], ["matTooltip", "facebook", 1, "text-muted"], ["target", "_blank", "href", "https://www.facebook.com/ramakiphotograph", 1, "smlnk"], ["src", "https://img.icons8.com/fluent/42/000000/facebook-new.png"], ["matTooltip", "500px", 1, "text-muted"], ["target", "_blank", "href", "https://500px.com/p/ramanathansks", 1, "smlnk"], ["src", "https://img.icons8.com/windows/37/000000/500px-new.png"], ["matRipple", "", 1, "toolbar"], ["fxHide.gt-xs", ""], ["mat-icon-button", "", 3, "click"], ["src", "https://img.icons8.com/plumpy/24/000000/menu--v1.png"], ["routerLink", ""], [1, "title"], ["fxFlex", "", "fxLayout", "", "fxLayoutAlign", "end", "fxHide.xs", ""], ["fxLayout", "", "fxLayoutGap", "15px", 1, "nav-item"], ["routerLink", "", 1, "fontcl"], ["routerLink", "gallery", 1, "fontcl"], ["routerLink", "about", 1, "fontcl"], ["href", "#sm", 1, "fontcl"]],
         template: function AppComponent_Template(rf, ctx) {
           if (rf & 1) {
             var _r4 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
@@ -1812,19 +1806,19 @@
 
       var _angular_fire__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
       /*! @angular/fire */
-      "jmUF");
+      "spgP");
       /* harmony import */
 
 
       var _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
       /*! @angular/fire/firestore */
-      "wD+u");
+      "I/3d");
       /* harmony import */
 
 
       var _angular_fire_storage__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
       /*! @angular/fire/storage */
-      "fMxG");
+      "Vaw3");
       /* harmony import */
 
 
@@ -1836,7 +1830,7 @@
 
       var _angular_flex_layout__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
       /*! @angular/flex-layout */
-      "u9T3");
+      "YUcS");
       /* harmony import */
 
 

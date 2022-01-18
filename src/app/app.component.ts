@@ -27,7 +27,7 @@ export class AppComponent implements OnInit {
     }
   }
   ngOnInit(): void {
-
+    
     const { onLine } = getWindow().navigator;
      
     this.status = onLine ? 'online' : 'offline'
