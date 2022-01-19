@@ -1,4 +1,6 @@
 # Auto detect text files and perform LF normalization
 # dependencies
 node_modules
+.vscode/settings.json
+src/environments/environment.ts
 dist
