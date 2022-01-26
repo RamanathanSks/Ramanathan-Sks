@@ -26,6 +26,10 @@ export class AppComponent implements OnInit {
       this.imgser.onFirstLoad = false;
     }
   }
+  scrollToElement($element:any): void {
+    console.log($element);
+    $element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+  }
   ngOnInit(): void {
     
     const { onLine } = getWindow().navigator;

@@ -1,11 +1,12 @@
 <html>
-<mat-progress-bar *ngIf="loader" style="height: 7px;" class="example-margin;" [color]="color" [mode]="mode">
-</mat-progress-bar>
+<span><mat-progress-bar *ngIf="loader" style="height: 7px;" class="example-margin;" [color]="color" [mode]="mode">
+</mat-progress-bar></span>
 <div>
     <div class="space"></div>
 </div>
 
-<body lightbox-group *ngIf="!loader">
+
+<body lightbox-group [hidden]="loader">
 
     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
 
