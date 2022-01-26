@@ -4,11 +4,7 @@ import { ProgressBarMode } from '@angular/material/progress-bar';
 import { ImageserviceService } from '../imageservice.service';
 import { Title } from "@angular/platform-browser";
 import { Subscription } from 'rxjs';
-export interface Tile {
-  cols: number;
-  rows: number;
-  URL: string;
-}
+
 
 @Component({
   selector: 'app-gallery',

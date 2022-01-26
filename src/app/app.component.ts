@@ -3,6 +3,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { getWindow } from './window';
 import { fromEvent, merge } from 'rxjs';
 import { map } from 'rxjs/operators';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 import { ImageserviceService } from './imageservice.service';
 import { Router } from '@angular/router'
@@ -19,24 +20,24 @@ export class AppComponent implements OnInit {
   status: string = "";
   @Output() stateChange = new EventEmitter<string>();
   col = "primary"
+  durationInSeconds = 5;
 
-  constructor(private imgser: ImageserviceService, public dialog: MatDialog, private route: Router) {
+  constructor(private imgser: ImageserviceService, public dialog: MatDialog, private route: Router, private _snackBar: MatSnackBar) {
 
     if (this.imgser.onFirstLoad) {
       this.imgser.onFirstLoad = false;
     }
   }
-  scrollToElement($element:any): void {
+  scrollToElement($element: any): void {
     console.log($element);
-    $element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+    $element.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
   }
   ngOnInit(): void {
-    
+
     const { onLine } = getWindow().navigator;
-     
+
     this.status = onLine ? 'online' : 'offline'
     this.stateChange.emit(this.status);
-
     merge(
       fromEvent<Event>(getWindow(), 'online'),
       fromEvent<Event>(getWindow(), 'offline'),
@@ -63,9 +64,10 @@ export class AppComponent implements OnInit {
       this.offsetFlag = true;
   }
 
-  
+
   @HostListener('contextmenu', ['$event'])
   onRightClick(event: any) {
+    this.openSnackBar("Right Click - Disabled ⛔");
     event.preventDefault();
   }
 
@@ -84,6 +86,12 @@ export class AppComponent implements OnInit {
   }
   closebarcode(): void {
     this.dialog.closeAll();
+  }
+
+  openSnackBar(message: string) {
+    this._snackBar.open(message, "", {
+      duration: 1000
+    });
   }
 
 }
