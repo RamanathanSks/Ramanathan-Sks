@@ -1,3 +1,6 @@
 # Auto detect text files and perform LF normalization
 # dependencies
+dist
 node_modules
+src/environments/environment.ts
+

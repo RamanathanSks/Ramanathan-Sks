@@ -21,7 +21,7 @@
             </mat-list-item>
             <mat-list-item matRipple>
 
-                <div mat-line class="sidelink" routerLink='About'>
+                <div mat-line class="sidelink" routerLink='about'>
                     <mat-icon mat-list-icon><img src="https://img.icons8.com/plumpy/22/000000/about.png" /></mat-icon>
                     &nbsp;&nbsp;<label>ABOUT</label>
                 </div>
@@ -33,16 +33,46 @@
         <footer>
             <div class="container">
                 <!-- Siednav footer -->
-                <span class="text-muted"><a class="sidenavSM" target="_blank" href="https://github.com/Ramanathan87"><img
-              src="https://img.icons8.com/fluent/35/000000/github.png" /></a></span>&nbsp;&nbsp;
-                <span class="text-muted"><a class="sidenavSM" target="_blank" href="https://twitter.com/RamanathanSks"><img
-              src="https://img.icons8.com/fluent/35/000000/twitter.png" /></a></span>&nbsp;&nbsp;
-                <span class="text-muted"><a class="sidenavSM" target="_blank" href="https://www.instagram.com/ramanathan_sks/"><img
-              src="https://img.icons8.com/fluent/35/000000/instagram-new.png" /></a></span>&nbsp;&nbsp;
-                <span class="text-muted"><a class="sidenavSM" target="_blank" href="https://www.facebook.com/ramakiphotograph"><img
-              src="https://img.icons8.com/fluent/35/000000/facebook-new.png" /></a></span>&nbsp;&nbsp;
-                <span class="text-muted"><a class="sidenavSM" target="_blank" href="https://500px.com/p/ramanathansks"><img
-              src="https://img.icons8.com/windows/30/000000/500px-new.png" /></a></span>
+                <span class="text-muted">
+                    <a class="sidenavSM" target="_blank" href="https://github.com/Ramanathan87">
+                        <img
+                            src="https://img.icons8.com/fluent/35/000000/github.png" 
+                            draggable="false" 
+                        />
+                    </a>
+                </span>&nbsp;&nbsp;
+                <span class="text-muted">
+                    <a class="sidenavSM" target="_blank" href="https://twitter.com/RamanathanSks">
+                        <img
+                            src="https://img.icons8.com/fluent/35/000000/twitter.png" 
+                            draggable="false" 
+                        />
+                    </a>
+                </span>&nbsp;&nbsp;
+                <span class="text-muted">
+                    <a class="sidenavSM" target="_blank" href="https://www.instagram.com/ramanathan_sks/">
+                        <img
+                             src="https://img.icons8.com/fluent/35/000000/instagram-new.png" 
+                             draggable="false" 
+                        />
+                    </a>
+                </span>&nbsp;&nbsp;
+                <span class="text-muted">
+                    <a class="sidenavSM" target="_blank" href="https://www.facebook.com/ramakiphotograph">
+                        <img
+                            src="https://img.icons8.com/fluent/35/000000/facebook-new.png" 
+                            draggable="false" 
+                        />
+                    </a>
+                </span>&nbsp;&nbsp;
+                <span class="text-muted">
+                    <a class="sidenavSM" target="_blank" href="https://500px.com/p/ramanathansks">
+                        <img
+                            src="https://img.icons8.com/windows/30/000000/500px-new.png" 
+                            draggable="false" 
+                        />
+                    </a>
+                </span>
             </div>
         </footer>
     </mat-sidenav>
@@ -53,8 +83,11 @@
         <mat-toolbar class="toolbar" *ngIf="offsetFlag" matRipple>
             <div fxHide.gt-xs>
                 <button mat-icon-button (click)="sidenav.toggle()">
-          <img src="https://img.icons8.com/plumpy/24/000000/menu--v1.png"/>
-        </button>
+                    <img 
+                        src="https://img.icons8.com/plumpy/24/000000/menu--v1.png" 
+                        draggable="false"
+                    />
+                </button>
             </div>
             <div>
                 <a routerLink=''><span class="title">RAMANATHAN</span></a>
@@ -68,7 +101,7 @@
                         <a class="fontcl" routerLink='gallery'>GALLERY</a>
                     </li>
                     <li>
-                        <a class="fontcl" routerLink='About'>ABOUT</a>
+                        <a class="fontcl" routerLink='about'>ABOUT</a>
                     </li>
                     <li>
                         <a class="fontcl" href='#sm'>CONNECT</a>
@@ -86,26 +119,54 @@
         </main>
         <footer matRipple class="footer" id="sm">
             <div class="footCon">
-                <!-- routerLink='contact' -->
+                <!-- routerLink='connect' -->
                 <h1 class="footTxt">CONNECT</h1>
             </div>
             <div class="container">
                 <!-- FOOter -->
-                <span class="text-muted" matTooltip="github"><a class="smlnk" target="_blank" href="https://github.com/Ramanathan87"><img
-              src="https://img.icons8.com/fluent/42/000000/github.png" /></a></span>&nbsp;&nbsp;
+                <span class="text-muted" matTooltip="github">
+                    <a class="smlnk" target="_blank" href="https://github.com/Ramanathan87">
+                        <img
+                            src="https://img.icons8.com/fluent/42/000000/github.png" 
+                            draggable="false" 
+                        />
+                    </a>
+                </span>&nbsp;&nbsp;
 
-                <span class="text-muted" matTooltip="twitter"><a class="smlnk" target="_blank" href="https://twitter.com/RamanathanSks"><img
-              src="https://img.icons8.com/fluent/42/000000/twitter.png" /></a></span>&nbsp;&nbsp;
+                <span class="text-muted" matTooltip="twitter">
+                    <a class="smlnk" target="_blank" href="https://twitter.com/RamanathanSks">
+                        <img
+                            src="https://img.icons8.com/fluent/42/000000/twitter.png" 
+                            draggable="false" 
+                        />
+                    </a>
+                </span>&nbsp;&nbsp;
 
-                <span class="text-muted"><a class="smlnk" ><img
-          (mouseenter)="openbarcode()" src="https://img.icons8.com/fluent/42/000000/instagram-new.png" /></a></span>&nbsp;&nbsp;
+                <span class="text-muted">
+                    <a class="smlnk" >
+                        <img
+                            (mouseenter)="openbarcode()" 
+                            src="https://img.icons8.com/fluent/42/000000/instagram-new.png" 
+                            draggable="false" 
+                        />
+                    </a>
+                </span> &nbsp;&nbsp;
 
-                <span class="text-muted" matTooltip="facebook"><a class="smlnk" target="_blank" href="https://www.facebook.com/ramakiphotograph"><img
-              src="https://img.icons8.com/fluent/42/000000/facebook-new.png" /></a></span>&nbsp;&nbsp;
+                <span class="text-muted" matTooltip="facebook">
+                    <a class="smlnk" target="_blank" href="https://www.facebook.com/ramakiphotograph">
+                        <img 
+                            src="https://img.icons8.com/fluent/42/000000/facebook-new.png" 
+                            draggable="false"
+                        />
+                    </a>
+                </span> &nbsp;&nbsp;
 
                 <span class="text-muted" matTooltip="500px">
                     <a class="smlnk" target="_blank" href="https://500px.com/p/ramanathansks">
-                        <img src="https://img.icons8.com/windows/37/000000/500px-new.png" />
+                        <img 
+                            src="https://img.icons8.com/windows/37/000000/500px-new.png" 
+                            draggable="false"
+                        />
                     </a>
                 </span>
 

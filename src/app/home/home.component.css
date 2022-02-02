@@ -181,6 +181,9 @@
     img {
         image-rendering: optimizeQuality;
         border-radius: 15px;
+        -webkit-user-select: none;
+        user-select: none;
+        -webkit-touch-callout: none;
     }
     
     .box {
