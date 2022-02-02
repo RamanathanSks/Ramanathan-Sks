@@ -6,13 +6,13 @@ export const environment = {
   
   production: false,
   firebase:{
-    apiKey: "AIzaSyBHY37xmpyX5iD4NHxX41GEY3r9IAQCLc4",
-    authDomain: "ram-port.firebaseapp.com",
+    apiKey: "#################",
+    authDomain: "#################",
     projectId: "ram-port",
-    storageBucket: "ram-port.appspot.com",
-    messagingSenderId: "843189379022",
-    appId: "1:843189379022:web:1017471ca5142d93c2559f",
-    measurementId: "G-TEPTLRLNBS"
+    storageBucket: "#################",
+    messagingSenderId: "#################",
+    appId: "#################",
+    measurementId: "#################",
   }
 };
 
