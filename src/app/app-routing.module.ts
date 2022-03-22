@@ -8,7 +8,8 @@ import {NotFoundComponentComponent} from './not-found-component/not-found-compon
 import {OfflineComponent} from './not-found-component/not-found-component.component';
 
 const routes: Routes = [
-  {path:'',component:HomeComponent},
+  {path:'',redirectTo:'Home',pathMatch:'full'},
+  {path:'Home',component:HomeComponent},
   {path:"gallery",component:GalleryComponent},
   {path:"about",component:AboutComponent},
   {path:"b2ZmbGluZQ",component:OfflineComponent},

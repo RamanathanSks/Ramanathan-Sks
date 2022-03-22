@@ -732,6 +732,7 @@ class AppComponent {
 AppComponent.ɵfac = function AppComponent_Factory(t) { return new (t || AppComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_imageservice_service__WEBPACK_IMPORTED_MODULE_4__["ImageserviceService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_material_dialog__WEBPACK_IMPORTED_MODULE_5__["MatDialog"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_6__["Router"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_material_snack_bar__WEBPACK_IMPORTED_MODULE_7__["MatSnackBar"])); };
 AppComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: AppComponent, selectors: [["app-root"]], hostBindings: function AppComponent_HostBindings(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("scroll", function AppComponent_scroll_HostBindingHandler($event) { return ctx.getScrollHeight($event); }, false, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresolveWindow"])("contextmenu", function AppComponent_contextmenu_HostBindingHandler($event) { return ctx.onRightClick($event); });
+<<<<<<< Updated upstream
     } }, outputs: { stateChange: "stateChange" }, decls: 78, vars: 1, consts: [["role", "navigation", 1, "sidenavList"], ["sidenav", ""], [2, "height", "100px"], [3, "click"], ["matRipple", ""], ["mat-line", "", "routerLink", "", 1, "sidelink"], ["mat-list-icon", ""], ["src", "https://img.icons8.com/plumpy/22/000000/home-page.png"], ["mat-line", "", "routerLink", "gallery", 1, "sidelink"], ["src", "https://img.icons8.com/plumpy/22/000000/image-gallery.png"], ["mat-line", "", "routerLink", "about", 1, "sidelink"], ["src", "https://img.icons8.com/plumpy/22/000000/about.png"], [1, "container"], [1, "text-muted"], ["target", "_blank", "href", "https://github.com/Ramanathan87", 1, "sidenavSM"], ["src", "https://img.icons8.com/fluent/35/000000/github.png", "draggable", "false"], ["target", "_blank", "href", "https://twitter.com/RamanathanSks", 1, "sidenavSM"], ["src", "https://img.icons8.com/fluent/35/000000/twitter.png", "draggable", "false"], ["target", "_blank", "href", "https://www.instagram.com/ramanathan_sks/", 1, "sidenavSM"], ["src", "https://img.icons8.com/fluent/35/000000/instagram-new.png", "draggable", "false"], ["target", "_blank", "href", "https://www.facebook.com/ramakiphotograph", 1, "sidenavSM"], ["src", "https://img.icons8.com/fluent/35/000000/facebook-new.png", "draggable", "false"], ["target", "_blank", "href", "https://500px.com/p/ramanathansks", 1, "sidenavSM"], ["src", "https://img.icons8.com/windows/30/000000/500px-new.png", "draggable", "false"], ["class", "toolbar", "matRipple", "", 4, "ngIf"], ["matRipple", "", "id", "sm", 1, "footer"], [1, "footCon"], [1, "footTxt"], ["matTooltip", "github", 1, "text-muted"], ["target", "_blank", "href", "https://github.com/Ramanathan87", 1, "smlnk"], ["src", "https://img.icons8.com/fluent/42/000000/github.png", "draggable", "false"], ["matTooltip", "twitter", 1, "text-muted"], ["target", "_blank", "href", "https://twitter.com/RamanathanSks", 1, "smlnk"], ["src", "https://img.icons8.com/fluent/42/000000/twitter.png", "draggable", "false"], [1, "smlnk"], ["src", "https://img.icons8.com/fluent/42/000000/instagram-new.png", "draggable", "false", 3, "mouseenter"], ["matTooltip", "facebook", 1, "text-muted"], ["target", "_blank", "href", "https://www.facebook.com/ramakiphotograph", 1, "smlnk"], ["src", "https://img.icons8.com/fluent/42/000000/facebook-new.png", "draggable", "false"], ["matTooltip", "500px", 1, "text-muted"], ["target", "_blank", "href", "https://500px.com/p/ramanathansks", 1, "smlnk"], ["src", "https://img.icons8.com/windows/37/000000/500px-new.png", "draggable", "false"], ["matRipple", "", 1, "toolbar"], ["fxHide.gt-xs", ""], ["mat-icon-button", "", 3, "click"], ["src", "https://img.icons8.com/plumpy/24/000000/menu--v1.png", "draggable", "false"], ["routerLink", ""], [1, "title"], ["fxFlex", "", "fxLayout", "", "fxLayoutAlign", "end", "fxHide.xs", ""], ["fxLayout", "", "fxLayoutGap", "15px", 1, "nav-item"], ["routerLink", "", 1, "fontcl"], ["routerLink", "gallery", 1, "fontcl"], ["routerLink", "about", 1, "fontcl"], ["href", "#sm", 1, "fontcl"]], template: function AppComponent_Template(rf, ctx) { if (rf & 1) {
         const _r4 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "mat-sidenav-container");
@@ -744,6 +745,25 @@ AppComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineCompo
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "div", 5);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "mat-icon", 6);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](9, "img", 7);
+=======
+    } }, outputs: { stateChange: "stateChange" }, decls: 80, vars: 2, consts: [["role", "navigation", 1, "sidenavList"], ["sidenav", ""], [2, "height", "100px"], [3, "click"], ["matRipple", ""], ["mat-line", "", "routerLink", "", 1, "sidelink"], ["mat-list-icon", ""], ["src", "https://img.icons8.com/plumpy/22/000000/home-page.png"], ["mat-line", "", "routerLink", "gallery", 1, "sidelink"], ["src", "https://img.icons8.com/plumpy/22/000000/image-gallery.png"], ["mat-line", "", "routerLink", "about", 1, "sidelink"], ["src", "https://img.icons8.com/plumpy/22/000000/about.png"], [1, "container"], [1, "text-muted"], ["target", "_blank", "href", "https://github.com/Ramanathan87", 1, "sidenavSM"], ["src", "https://img.icons8.com/fluent/35/000000/github.png", "draggable", "false"], ["target", "_blank", "href", "https://twitter.com/SksRamanathan", 1, "sidenavSM"], ["src", "https://img.icons8.com/fluent/35/000000/twitter.png", "draggable", "false"], ["target", "_blank", "href", "https://www.instagram.com/ramanathan_sks/", 1, "sidenavSM"], ["src", "https://img.icons8.com/fluent/35/000000/instagram-new.png", "draggable", "false"], ["target", "_blank", "href", "https://www.facebook.com/ramakiphotograph", 1, "sidenavSM"], ["src", "https://img.icons8.com/fluent/35/000000/facebook-new.png", "draggable", "false"], ["target", "_blank", "href", "https://500px.com/p/ramanathansks", 1, "sidenavSM"], ["src", "https://img.icons8.com/windows/30/000000/500px-new.png", "draggable", "false"], ["class", "toolbar", "matRipple", "", 4, "ngIf"], ["matRipple", "", "id", "sm", 1, "footer"], [1, "footCon"], [1, "footTxt"], ["matTooltip", "github", 1, "text-muted"], ["target", "_blank", "href", "https://github.com/Ramanathan87", 1, "smlnk"], ["src", "https://img.icons8.com/fluent/42/000000/github.png", "draggable", "false", "alt", "GITHUB"], ["matTooltip", "twitter", 1, "text-muted"], ["target", "_blank", "href", "https://twitter.com/SksRamanathan", 1, "smlnk"], ["src", "https://img.icons8.com/fluent/42/000000/twitter.png", "draggable", "false", "alt", "TWITTER"], [1, "smlnk"], ["src", "https://img.icons8.com/fluent/42/000000/instagram-new.png", "draggable", "false", "alt", "INSTAGRAM", 3, "mouseenter"], ["matTooltip", "facebook", 1, "text-muted"], ["target", "_blank", "href", "https://www.facebook.com/ramakiphotograph", 1, "smlnk"], ["src", "https://img.icons8.com/fluent/42/000000/facebook-new.png", "draggable", "false", "alt", "FACEBOOK"], ["matTooltip", "500px", 1, "text-muted"], ["target", "_blank", "href", "https://500px.com/p/ramanathansks", 1, "smlnk"], ["src", "https://img.icons8.com/windows/37/000000/500px-new.png", "draggable", "false", "alt", "500PX"], ["matRipple", "", "id", "myBtn", "matTooltip", "Go Top", 3, "click", 4, "ngIf"], ["matRipple", "", 1, "toolbar"], ["fxHide.gt-xs", ""], ["mat-icon-button", "", 3, "click"], ["src", "https://img.icons8.com/plumpy/24/000000/menu--v1.png", "draggable", "false"], ["routerLink", ""], [1, "title"], ["fxFlex", "", "fxLayout", "", "fxLayoutAlign", "end", "fxHide.xs", ""], ["fxLayout", "", "fxLayoutGap", "15px", 1, "nav-item"], ["routerLink", "", 1, "fontcl"], ["routerLink", "gallery", 1, "fontcl"], ["routerLink", "about", 1, "fontcl"], [1, "fontcl", 3, "click"], ["matRipple", "", "id", "myBtn", "matTooltip", "Go Top", 3, "click"], ["alt", "GO TOP", "src", "https://img.icons8.com/small/25/000000/circled-up-2.png"]], template: function AppComponent_Template(rf, ctx) { if (rf & 1) {
+        const _r8 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "html");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "mat-sidenav-container");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "mat-sidenav", 0, 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](4, "div", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "mat-list", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function AppComponent_Template_mat_list_click_5_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r8); const _r0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵreference"](3); return _r0.toggle(); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](6, "mat-divider");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "mat-list-item", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "div", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "mat-icon", 6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](10, "img", 7);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](11, "\u00A0\u00A0\u00A0");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "label");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](13, "HOME");
+>>>>>>> Stashed changes
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](10, "\u00A0\u00A0\u00A0");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "label");
@@ -882,7 +902,90 @@ barcodeDialog.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComp
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+<<<<<<< Updated upstream
     } }, directives: [_angular_material_tooltip__WEBPACK_IMPORTED_MODULE_14__["MatTooltip"]], styles: ["a[_ngcontent-%COMP%] {\n            outline: none;\n        }\n        \n        p[_ngcontent-%COMP%] {\n            text-align: center;\n        }"] });
+=======
+    } }, directives: [_angular_material_tooltip__WEBPACK_IMPORTED_MODULE_15__["MatTooltip"]], styles: ["a[_ngcontent-%COMP%] {\n            outline: none;\n        }\n        \n        p[_ngcontent-%COMP%] {\n            text-align: center;\n        }"] });
+class BottomSheet {
+    constructor(_bottomSheetRef) {
+        this._bottomSheetRef = _bottomSheetRef;
+    }
+    openLink(event) {
+        this._bottomSheetRef.dismiss();
+        event.preventDefault();
+    }
+}
+BottomSheet.ɵfac = function BottomSheet_Factory(t) { return new (t || BottomSheet)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_material_bottom_sheet__WEBPACK_IMPORTED_MODULE_5__["MatBottomSheetRef"])); };
+BottomSheet.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: BottomSheet, selectors: [["bottom-sheet"]], decls: 42, vars: 0, consts: [["lang", "en"], ["charset", "UTF-8"], ["http-equiv", "X-UA-Compatible", "content", "IE=edge"], ["name", "viewport", "content", "width=device-width, initial-scale=1.0"], ["mat-header", ""], ["href", "https://mail.google.com/mail/u/0/?view=cm&fs=1&to=ramanathan.sks@gmail.com&tf=1", "target", "_blank", "rel", "noopener noreferrer"], ["matRipple", ""], ["mat-list-icon", ""], [1, "material-icons"], ["mat-line", ""], ["href", "https://www.linkedin.com/in/ramanathan-sks/", "target", "_blank", "rel", "noopener noreferrer"], ["src", "https://img.icons8.com/fluency/25/000000/linkedin-circled.png"], ["href", "https://www.instagram.com/ramanathan_sks/", "target", "_blank", "rel", "noopener noreferrer"], ["src", "https://img.icons8.com/fluent/25/000000/instagram-new.png", "draggable", "false", "alt", "INSTAGRAM"], ["href", "https://www.facebook.com/ramakiphotograph", "target", "_blank", "rel", "noopener noreferrer"], ["src", "https://img.icons8.com/fluent/25/000000/facebook-new.png", "draggable", "false", "alt", "FACEBOOK"], ["href", "https://twitter.com/SksRamanathan", "target", "_blank", "rel", "noopener noreferrer"], ["src", "https://img.icons8.com/fluent/23/000000/twitter.png", "draggable", "false", "alt", "TWITTER"]], template: function BottomSheet_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "html", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "head");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "meta", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](3, "meta", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](4, "meta", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "title");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6, "Document");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "body");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "mat-list");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "div", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](10, "Connect");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](11, "mat-divider");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "a", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "mat-list-item", 6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](14, "mat-icon", 7);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](15, "span", 8);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](16, " email ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](17, "div", 9);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](18, "Mail");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](19, "mat-divider");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](20, "mat-list-item");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](21, "mat-chip-list");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](22, "a", 10);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](23, "mat-chip");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](24, "mat-chip-avatar");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](25, "img", 11);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](26, " LinkedIn ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](27, "a", 12);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](28, "mat-chip");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](29, "mat-chip-avatar");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](30, "img", 13);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](31, " Instagram ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](32, "a", 14);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](33, "mat-chip");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](34, "mat-chip-avatar");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](35, "img", 15);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](36, " Facebook ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](37, "a", 16);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](38, "mat-chip");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](39, "mat-chip-avatar");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](40, "img", 17);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](41, " Twitter ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } }, directives: [_angular_material_list__WEBPACK_IMPORTED_MODULE_10__["MatList"], _angular_material_divider__WEBPACK_IMPORTED_MODULE_11__["MatDivider"], _angular_material_list__WEBPACK_IMPORTED_MODULE_10__["MatListItem"], _angular_material_core__WEBPACK_IMPORTED_MODULE_12__["MatRipple"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_13__["MatIcon"], _angular_material_list__WEBPACK_IMPORTED_MODULE_10__["MatListIconCssMatStyler"], _angular_material_core__WEBPACK_IMPORTED_MODULE_12__["MatLine"], _angular_material_chips__WEBPACK_IMPORTED_MODULE_20__["MatChipList"], _angular_material_chips__WEBPACK_IMPORTED_MODULE_20__["MatChip"], _angular_material_chips__WEBPACK_IMPORTED_MODULE_20__["MatChipAvatar"]], styles: [".mat-list-icon[_ngcontent-%COMP%] {\n            color: rgba(0, 0, 0, 0.54);\n        }\n        \n        a[_ngcontent-%COMP%] {\n            text-decoration: none;\n            color: black;\n            cursor: pointer;\n        }"] });
+>>>>>>> Stashed changes
 
 
 /***/ }),
@@ -1187,7 +1290,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const routes = [
-    { path: '', component: _home_home_component__WEBPACK_IMPORTED_MODULE_1__["HomeComponent"] },
+    { path: '', redirectTo: 'Home', pathMatch: 'full' },
+    { path: 'Home', component: _home_home_component__WEBPACK_IMPORTED_MODULE_1__["HomeComponent"] },
     { path: "gallery", component: _gallery_gallery_component__WEBPACK_IMPORTED_MODULE_2__["GalleryComponent"] },
     { path: "about", component: _about_about_component__WEBPACK_IMPORTED_MODULE_3__["AboutComponent"] },
     { path: "b2ZmbGluZQ", component: _not_found_component_not_found_component_component__WEBPACK_IMPORTED_MODULE_4__["OfflineComponent"] },

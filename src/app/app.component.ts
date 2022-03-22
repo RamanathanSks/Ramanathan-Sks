@@ -21,8 +21,17 @@ export class AppComponent implements OnInit {
   @Output() stateChange = new EventEmitter<string>();
   col = "primary"
   durationInSeconds = 5;
+<<<<<<< Updated upstream
 
   constructor(private imgser: ImageserviceService, public dialog: MatDialog, private route: Router, private _snackBar: MatSnackBar) {
+=======
+  currentUrl!:string;
+  constructor(private imgser: ImageserviceService, 
+    private _bottomSheet: MatBottomSheet,
+    public dialog: MatDialog, 
+    private route: Router, 
+    private _snackBar: MatSnackBar) {
+>>>>>>> Stashed changes
 
     if (this.imgser.onFirstLoad) {
       this.imgser.onFirstLoad = false;
@@ -46,10 +55,11 @@ export class AppComponent implements OnInit {
         this.status = res;
         this.stateChange.emit(res);
         if (res == 'offline') {
+          this.currentUrl=this.route.url;
           this.route.navigateByUrl("b2ZmbGluZQ");
         }
         if (res == 'online') {
-          this.route.navigateByUrl("");
+          this.route.navigateByUrl(this.currentUrl);
 
         }
       });
