@@ -20,7 +20,7 @@ export class GalleryComponent implements OnInit,OnDestroy,AfterViewInit {
   CarouselSub!:Subscription;
   TilesSub!:Subscription;
   ImageListSub!:Subscription;
-  
+  onload:boolean=false;
   
   color: ThemePalette = 'primary';
   mode: ProgressBarMode = 'indeterminate';
@@ -36,29 +36,36 @@ export class GalleryComponent implements OnInit,OnDestroy,AfterViewInit {
   }
   
   ngOnInit(): void {
+    
+    this.onload=true;
     this.CarouselSub = this.imgser.getCarouselObs().subscribe(i=>{
       var carouselObj:any[]=i;
-      carouselObj.map(img=>{
+      if(this.carouselImgList.length==0){
+        carouselObj.map(img=>{
           this.carouselImgList.push(img);
-      });
+        });
+      }
+      
     });
 
     this.TilesSub = this.imgser.getTitlesObs().subscribe(i=>{
       var titleObj:any[]=i;
-      titleObj.map(img=>{
+      if(this.tilesImgList.length==0){
+        titleObj.map(img=>{
           this.tilesImgList.push(img);
-      });
+        });
+      }
+      
     });
     
     this.ImageListSub = this.imgser.getImgageObs().subscribe(i=>{
       var imageObj:any[]=i;
-      imageObj.map(img=>{
+      if(this.imageList.length==0){
+        imageObj.map(img=>{
           this.imageList.push(img);
-      });
+        });
+      }
     });
-    
-    
-
   }
 
   ngOnDestroy(): void {

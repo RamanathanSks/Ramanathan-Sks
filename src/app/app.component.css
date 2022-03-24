@@ -2,7 +2,7 @@
     flex: 1 1 auto;
 }
 
-* {
+html {
     scroll-behavior: smooth;
 }
 
@@ -166,6 +166,7 @@ main {
 a {
     text-decoration: none;
     color: white;
+    cursor: pointer;
 }
 
 a.hover.a.active {
@@ -181,4 +182,20 @@ mat-toolbar {
     mat-toolbar {
         border-radius: 0px;
     }
+}
+
+#myBtn {
+    position: fixed;
+    bottom: 80px;
+    right: 10px;
+    z-index: 99;
+    font-size: 25px;
+    border: none;
+    outline: none;
+    color: black;
+    background-color: rgba(78, 78, 78, 0.493);
+    color: white;
+    cursor: pointer;
+    padding: 6px;
+    border-radius: 12px;
 }

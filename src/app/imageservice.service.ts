@@ -12,7 +12,7 @@ interface imgint {
 })
 
 export class ImageserviceService {
-  public onFirstLoad: boolean = true;
+  onFirstLoad: boolean=true;
   CardObs!:Observable<any>;
   CarouselObs!:Observable<any>;
   TitleObs!:Observable<any>;

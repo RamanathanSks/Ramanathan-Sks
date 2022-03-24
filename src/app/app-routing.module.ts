@@ -10,8 +10,8 @@ import {OfflineComponent} from './not-found-component/not-found-component.compon
 const routes: Routes = [
   {path:'',redirectTo:'Home',pathMatch:'full'},
   {path:'Home',component:HomeComponent},
-  {path:"gallery",component:GalleryComponent},
-  {path:"about",component:AboutComponent},
+  {path:"Gallery",component:GalleryComponent},
+  {path:"About",component:AboutComponent},
   {path:"b2ZmbGluZQ",component:OfflineComponent},
   {path: '404', component: NotFoundComponentComponent},
   {path: '**', redirectTo: '/404'}

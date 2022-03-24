@@ -1,4 +1,4 @@
-import { Component, EventEmitter, HostListener, OnInit, Output } from '@angular/core';
+import { Component, ElementRef, EventEmitter, HostListener, OnInit, Output, ViewChild } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { getWindow } from './window';
 import { fromEvent, merge } from 'rxjs';
@@ -7,6 +7,7 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 
 import { ImageserviceService } from './imageservice.service';
 import { Router } from '@angular/router'
+import { MatBottomSheet, MatBottomSheetRef } from '@angular/material/bottom-sheet';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -21,30 +22,19 @@ export class AppComponent implements OnInit {
   @Output() stateChange = new EventEmitter<string>();
   col = "primary"
   durationInSeconds = 5;
-<<<<<<< Updated upstream
 
-  constructor(private imgser: ImageserviceService, public dialog: MatDialog, private route: Router, private _snackBar: MatSnackBar) {
-=======
-  currentUrl!:string;
-  constructor(private imgser: ImageserviceService, 
-    private _bottomSheet: MatBottomSheet,
-    public dialog: MatDialog, 
-    private route: Router, 
-    private _snackBar: MatSnackBar) {
->>>>>>> Stashed changes
+  constructor(private imgser: ImageserviceService, private _bottomSheet: MatBottomSheet,public dialog: MatDialog, private route: Router, private _snackBar: MatSnackBar) {
 
     if (this.imgser.onFirstLoad) {
       this.imgser.onFirstLoad = false;
     }
   }
-  scrollToElement($element: any): void {
-    console.log($element);
-    $element.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+  Connect(){
+    this._bottomSheet.open(BottomSheet);
   }
   ngOnInit(): void {
 
     const { onLine } = getWindow().navigator;
-
     this.status = onLine ? 'online' : 'offline'
     this.stateChange.emit(this.status);
     merge(
@@ -55,11 +45,10 @@ export class AppComponent implements OnInit {
         this.status = res;
         this.stateChange.emit(res);
         if (res == 'offline') {
-          this.currentUrl=this.route.url;
           this.route.navigateByUrl("b2ZmbGluZQ");
         }
         if (res == 'online') {
-          this.route.navigateByUrl(this.currentUrl);
+          this.route.navigateByUrl("");
 
         }
       });
@@ -77,11 +66,16 @@ export class AppComponent implements OnInit {
 
   @HostListener('contextmenu', ['$event'])
   onRightClick(event: any) {
-    this.openSnackBar("Right Click - Disabled ⛔");
+    this.openSnackBar("Disabled ⛔");
     event.preventDefault();
   }
 
-
+  gotop(){
+    window.scroll(0,0);
+  }
+  gobottom(){
+    window.scroll(0,1999999);
+  }
   openbarcode(): void {
     const bardialog = this.dialog.open(barcodeDialog, {
       width: "auto",
@@ -112,3 +106,15 @@ export class AppComponent implements OnInit {
 })
 export class barcodeDialog { }
 
+@Component({
+  selector: 'bottom-sheet',
+  templateUrl: 'bottom-sheet.html',
+})
+export class BottomSheet {
+  constructor(private _bottomSheetRef: MatBottomSheetRef<BottomSheet>) {}
+
+  openLink(event: MouseEvent): void {
+    this._bottomSheetRef.dismiss();
+    event.preventDefault();
+  }
+}

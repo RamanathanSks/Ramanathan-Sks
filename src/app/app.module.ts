@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { environment } from 'src/environments/environment';
@@ -21,6 +21,7 @@ import { AboutComponent } from './about/about.component';
 import {barcodeDialog} from './app.component';
 import { NotFoundComponentComponent } from './not-found-component/not-found-component.component';
 import {OfflineComponent} from './not-found-component/not-found-component.component';
+import {BottomSheet} from './app.component';
 @NgModule({ 
   declarations: [
     AppComponent,
@@ -29,7 +30,7 @@ import {OfflineComponent} from './not-found-component/not-found-component.compon
     GalleryComponent,
     AboutComponent,
     NotFoundComponentComponent,
-    OfflineComponent
+    OfflineComponent,BottomSheet
   ],
   imports: [
     BrowserModule,
@@ -38,21 +39,14 @@ import {OfflineComponent} from './not-found-component/not-found-component.compon
     AppRoutingModule,
     BrowserAnimationsModule,
     AngularFireModule.initializeApp(
-      {
-        apiKey: "AIzaSyBHY37xmpyX5iD4NHxX41GEY3r9IAQCLc4",
-        authDomain: "ram-port.firebaseapp.com",
-        projectId: "ram-port",
-        storageBucket: "ram-port.appspot.com",
-        messagingSenderId: "843189379022",
-        appId: "1:843189379022:web:1017471ca5142d93c2559f",
-        measurementId: "G-TEPTLRLNBS"
-      }
+      environment.firebase
     ),
     AngularFireStorageModule,
     AngularFirestoreModule,
     CrystalLightboxModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas:[CUSTOM_ELEMENTS_SCHEMA],
 })
 export class AppModule { }
