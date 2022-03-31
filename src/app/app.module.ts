@@ -47,6 +47,6 @@ import {BottomSheet} from './app.component';
   ],
   providers: [],
   bootstrap: [AppComponent],
-  schemas:[CUSTOM_ELEMENTS_SCHEMA],
+  schemas:[],
 })
 export class AppModule { }
