@@ -178,6 +178,12 @@ mat-toolbar {
     height: 60px;
 }
 
+.more {
+    padding-top: 4px;
+    color: white;
+    cursor: pointer;
+}
+
 @media(max-width:950px) {
     mat-toolbar {
         border-radius: 0px;

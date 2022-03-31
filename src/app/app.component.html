@@ -104,24 +104,52 @@
             </div>
             <div fxFlex fxLayout fxLayoutAlign="end" fxHide.xs>
                 <ul fxLayout fxLayoutGap="15px" class="nav-item">
-                    <li>
-                        <a class="fontcl" routerLink='Home'>HOME</a>
+                    <li routerLink='Home'>
+                        <a class="fontcl">HOME</a>
                     </li>
-                    <li>
-                        <a class="fontcl" routerLink='Gallery'>GALLERY</a>
+                    <li routerLink='Gallery'>
+                        <a class="fontcl">GALLERY</a>
                     </li>
-                    <li>
-                        <a class="fontcl" routerLink='About'>ABOUT</a>
+                    <li routerLink='About'>
+                        <a class="fontcl">ABOUT</a>
                     </li>
-                    <li>
-                        <a class="fontcl" (click)="Connect()">CONNECT</a>
-                        <<<<<<< Updated upstream <!-- <a class="fontcl" (click)="gobottom()">CONNECT</a> --> ======= >>>>>>> Stashed changes
+                    <li (click)="Connect()">
+                        <a class="fontcl">CONNECT</a>
                     </li>
+
+                    <li class="more" [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+                        <span><mat-icon >more_vert</mat-icon></span>
+                    </li>
+
 
                 </ul>
             </div>
-        </mat-toolbar>
 
+        </mat-toolbar>
+        <mat-menu #menu="matMenu">
+            <a href="https://github.com/Ramanathan87/Ramanathan-Sks" target="_blank" rel="noopener noreferrer">
+                <button mat-menu-item>
+                    <img src="https://img.icons8.com/material-outlined/28/000000/source-code.png"/>
+                    &nbsp;
+                    <span>Code</span>
+                </button>
+            </a>
+            <a href="https://github.com/Ramanathan87/Ramanathan-Sks/issues" target="_blank" rel="noopener noreferrer">
+                <button mat-menu-item>
+                    <img src="https://img.icons8.com/material-outlined/28/000000/github.png"/>
+                    &nbsp;
+                    <span>Issues</span>
+                </button>
+            </a>
+            <!-- <button mat-menu-item disabled>
+                <mat-icon>voicemail</mat-icon>
+                    <span>Check voice mail</span>
+            </button>
+            <button mat-menu-item disabled>
+                <mat-icon>notifications_off</mat-icon>
+                    <span>Alerts</span>
+                </button> -->
+        </mat-menu>
         <main>
             <router-outlet>
 
@@ -131,7 +159,7 @@
         <footer matRipple class="footer" id="sm">
             <div class="footCon">
                 <!-- routerLink='connect' -->
-                <h1 class="footTxt">CONNECT</h1>
+                <h2 class="footTxt">CONNECT</h2>
             </div>
             <div class="container">
                 <!-- FOOter -->
