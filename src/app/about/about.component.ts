@@ -8,6 +8,7 @@ import { Title } from '@angular/platform-browser';
   styleUrls: ['./about.component.css']
 })
 export class AboutComponent implements OnInit {
+  imgurl="https://firebasestorage.googleapis.com/v0/b/ram-port.appspot.com/o/me.bw.jpeg?alt=media&token=82107549-f6a1-4383-8785-ade33a391c16"
 
   constructor(private title:Title,public dialog: MatDialog) { 
     this.title.setTitle("About | Ramanathan")
@@ -33,5 +34,8 @@ export class AboutComponent implements OnInit {
   templateUrl: 'image.html'
 })
 export class ImageComponenet{
+
+
+  
 
 }

@@ -8,6 +8,7 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 import { ImageserviceService } from './imageservice.service';
 import { Router } from '@angular/router'
 import { MatBottomSheet, MatBottomSheetRef } from '@angular/material/bottom-sheet';
+import { MatMenuTrigger } from '@angular/material/menu';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -32,6 +33,16 @@ export class AppComponent implements OnInit {
   Connect(){
     this._bottomSheet.open(BottomSheet);
   }
+  @ViewChild(MatMenuTrigger) trigger!: MatMenuTrigger;
+
+  openNFTmenu() {
+    this.trigger.openMenu();
+  }
+
+  OpenNFTSheet(){
+    this._bottomSheet.open(BottomSheetNFT);
+  }
+
   ngOnInit(): void {
 
     const { onLine } = getWindow().navigator;
@@ -115,6 +126,20 @@ export class BottomSheet {
 
   openLink(event: MouseEvent): void {
     this._bottomSheetRef.dismiss();
+    event.preventDefault();
+  }
+}
+
+
+@Component({
+  selector: 'bottom-sheet2',
+  templateUrl: 'bottom-sheet2.html',
+})
+export class BottomSheetNFT {
+  constructor(private _bottomSheetRef2: MatBottomSheetRef<BottomSheet>) {}
+
+  openLink(event: MouseEvent): void {
+    this._bottomSheetRef2.dismiss();
     event.preventDefault();
   }
 }

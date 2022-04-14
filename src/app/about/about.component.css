@@ -27,11 +27,9 @@ body {
     margin: 0;
     padding: 0;
     perspective: 1px;
-    height: 100vh;
     transform-style: preserve-3d;
     image-rendering: optimizeSpeed;
     font-family: futura-pt;
-    overflow: scroll;
     font-weight: 300;
     font-style: normal;
     font-size: 20px;
@@ -46,7 +44,7 @@ body {
     -moz-background-position: center;
     -o-background-position: center;
     background-position: center;
-    background-color: rgb(197, 197, 197);
+    background-color: rgb(255, 255, 255);
     /* background-image: url("https://firebasestorage.googleapis.com/v0/b/ram-port.appspot.com/o/home%2F1.jpeg?alt=media&token=144d6157-4157-48e8-83ac-9c6567384c43"); */
 }
 
@@ -77,39 +75,4 @@ html {
     text-transform: uppercase;
     letter-spacing: 5px;
     line-height: 0.5;
-}
-
-.main {
-    display: table;
-    padding-top: 80px;
-    width: 100%;
-    text-align: center;
-    color: rgb(68, 68, 68);
-    font-family: 'Roboto Condensed', sans-serif;
-    font-weight: 100;
-    pointer-events: none;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    line-height: 0.5;
-}
-
-.fof {
-    display: table-cell;
-    vertical-align: middle;
-}
-
-.fof h1 {
-    font-size: 50px;
-    display: inline-block;
-    padding-right: 12px;
-    animation: type .5s alternate infinite;
-}
-
-@keyframes type {
-    from {
-        box-shadow: inset -3px 0px 0px rgb(68, 68, 68);
-    }
-    to {
-        box-shadow: inset -3px 0px 0px transparent;
-    }
 }

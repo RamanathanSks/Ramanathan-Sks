@@ -186,6 +186,10 @@ mat-toolbar {
     cursor: pointer;
 }
 
+.nftMenu {
+    cursor: pointer;
+}
+
 @media(max-width:950px) {
     mat-toolbar {
         border-radius: 0px;

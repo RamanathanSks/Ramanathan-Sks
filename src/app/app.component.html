@@ -29,6 +29,15 @@
                 </div>
             </mat-list-item>
 
+            <mat-list-item matRipple>
+
+                <div mat-line class="sidelink" (click)="OpenNFTSheet()">
+                    <mat-icon mat-list-icon><img src="https://img.icons8.com/pastel-glyph/22/000000/nft.png" /></mat-icon>
+                    &nbsp;&nbsp;<label>NFT</label>
+                </div>
+            </mat-list-item>
+
+
             <!-- <mat-list-item matRipple>
 
                 <div mat-line class="sidelink" (click)="Connect()">
@@ -110,14 +119,28 @@
                     <li routerLink='Gallery'>
                         <a class="fontcl">GALLERY</a>
                     </li>
+                    <li class="nftMenu" [matMenuTriggerFor]="menu" [matMenuTriggerFor]="beforeMenu" (mouseenter)="openNFTmenu()">
+                        <span class="fontcl">NFT</span>
+                    </li>
+                    <mat-menu #beforeMenu="matMenu" xPosition="before">
+                        <a href="https://opensea.io/RamAki" target="_blank" rel="noopener noreferrer">
+                            <button mat-menu-item>
+                                <img src="https://storage.googleapis.com/opensea-static/Logomark/Logomark-Blue.png" height="24px" width="auto"/>
+                                &nbsp;
+                                <span>OpenSea</span>
+                            </button>
+                        </a>
+
+                    </mat-menu>
                     <li routerLink='About'>
                         <a class="fontcl">ABOUT</a>
                     </li>
+
                     <li (click)="Connect()">
                         <a class="fontcl">CONNECT</a>
                     </li>
 
-                    <li class="more" [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+                    <li class="more" [matMenuTriggerFor]="menu">
                         <span><mat-icon >more_vert</mat-icon></span>
                     </li>
 
@@ -141,15 +164,9 @@
                     <span>Issues</span>
                 </button>
             </a>
-            <!-- <button mat-menu-item disabled>
-                <mat-icon>voicemail</mat-icon>
-                    <span>Check voice mail</span>
-            </button>
-            <button mat-menu-item disabled>
-                <mat-icon>notifications_off</mat-icon>
-                    <span>Alerts</span>
-                </button> -->
         </mat-menu>
+
+
         <main>
             <router-outlet>
 
@@ -174,7 +191,7 @@
                     </span>&nbsp;&nbsp;
 
                 <span class="text-muted" matTooltip="twitter">
-                        <a class="smlnk" target="_blank" href="https://twitter.com/RamanathanSks">
+                        <a class="smlnk" target="_blank" href="https://twitter.com/SksRamanathan">
                             <img
                                 src="https://img.icons8.com/fluent/42/000000/twitter.png" 
                                 draggable="false" 

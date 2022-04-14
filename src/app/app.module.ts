@@ -22,6 +22,7 @@ import {barcodeDialog} from './app.component';
 import { NotFoundComponentComponent } from './not-found-component/not-found-component.component';
 import {OfflineComponent} from './not-found-component/not-found-component.component';
 import {BottomSheet} from './app.component';
+import {BottomSheetNFT} from './app.component';
 @NgModule({ 
   declarations: [
     AppComponent,
@@ -30,7 +31,8 @@ import {BottomSheet} from './app.component';
     GalleryComponent,
     AboutComponent,
     NotFoundComponentComponent,
-    OfflineComponent,BottomSheet
+    OfflineComponent,
+    BottomSheet,BottomSheetNFT
   ],
   imports: [
     BrowserModule,
