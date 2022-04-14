@@ -26,7 +26,6 @@ mat-sidenav {
 .fontcl:hover {
     transition: cubic-bezier(0.075, 0.82, 0.165, 1);
     opacity: 100%;
-    zoom: 105%;
     color: white;
 }
 
@@ -53,7 +52,6 @@ li {
 
 .title:hover {
     color: white;
-    zoom: 101%;
 }
 
 mat-sidenav {
@@ -69,10 +67,10 @@ mat-sidenav {
     -moz-background-color: rgba(39, 39, 39, 0.40);
     -o-background-color: rgba(39, 39, 39, 0.40);
     background-color: rgba(39, 39, 39, 0.40);
-    -webkit-backdrop-filter: blur(10px) contrast(90%);
-    -moz-backdrop-filter: blur(10px) contrast(90%);
-    -o-backdrop-filter: blur(10px) contrast(90%);
-    backdrop-filter: blur(10px) contrast(90%);
+    -webkit-backdrop-filter: blur(10px) contrast(100%) saturate(100%) brightness(100%);
+    -moz-backdrop-filter: blur(10px) contrast(100%) saturate(100%) brightness(100%);
+    -o-backdrop-filter: blur(10px) contrast(100%) saturate(100%) brightness(100%);
+    backdrop-filter: blur(10px) contrast(100%) saturate(100%) brightness(100%);
     -webkit-transition: all .9s ease-in-out !important;
     -moz-transition: all .9s ease-in-out !important;
     -o-transition: all .9s ease-in-out !important;
@@ -176,6 +174,10 @@ a.hover.a.active {
 mat-toolbar {
     /* background-color: rgba(201, 195, 195, 0.205); */
     height: 60px;
+}
+
+.mat-elevation-z6 {
+    box-shadow: 0 3px 5px -1px #0003, 0 6px 10px #00000024, 0 1px 18px #0000001f;
 }
 
 .more {
