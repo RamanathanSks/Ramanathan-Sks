@@ -9,6 +9,7 @@ import { ImageserviceService } from './imageservice.service';
 import { Router } from '@angular/router'
 import { MatBottomSheet, MatBottomSheetRef } from '@angular/material/bottom-sheet';
 import { MatMenuTrigger } from '@angular/material/menu';
+import { AngularFireAnalytics } from '@angular/fire/analytics';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -23,9 +24,11 @@ export class AppComponent implements OnInit {
   @Output() stateChange = new EventEmitter<string>();
   col = "primary"
   durationInSeconds = 5;
+  currentUrl: any;
+  hide=true
 
-  constructor(private imgser: ImageserviceService, private _bottomSheet: MatBottomSheet,public dialog: MatDialog, private route: Router, private _snackBar: MatSnackBar) {
-
+  constructor(private analytics: AngularFireAnalytics,private imgser: ImageserviceService, private _bottomSheet: MatBottomSheet,public dialog: MatDialog, private route: Router, private _snackBar: MatSnackBar) {
+    // analytics.app;
     if (this.imgser.onFirstLoad) {
       this.imgser.onFirstLoad = false;
     }
@@ -55,11 +58,13 @@ export class AppComponent implements OnInit {
       map(x => x.type)).subscribe(res => {
         this.status = res;
         this.stateChange.emit(res);
+        
         if (res == 'offline') {
+          this.currentUrl=this.route.url;
           this.route.navigateByUrl("b2ZmbGluZQ");
         }
         if (res == 'online') {
-          this.route.navigateByUrl("");
+          this.route.navigateByUrl(this.currentUrl);
 
         }
       });

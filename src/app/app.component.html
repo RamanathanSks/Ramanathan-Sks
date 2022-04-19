@@ -1,7 +1,7 @@
 <html>
 
 <mat-sidenav-container>
-    <mat-sidenav class="sidenavList" #sidenav role="navigation">
+    <mat-sidenav class="sidenavList" #sidenav role="navigation" mode="over" position="start">
         <div style="height: 100px;">
             <!-- <img height="160" width="100%" src=" https://firebasestorage.googleapis.com/v0/b/ram-port.appspot.com/o/sidenavtop_-_Copy-removebg.png?alt=media&token=22c78e14-84c2-4c3c-879e-2005e5e6c495" alt=""> -->
         </div>
@@ -10,21 +10,21 @@
             <mat-divider></mat-divider>
             <mat-list-item matRipple>
                 <div mat-line class="sidelink" routerLink=''>
-                    <mat-icon mat-list-icon><img src="https://img.icons8.com/plumpy/22/000000/home-page.png" />
+                    <mat-icon mat-list-icon><img class="iconimg" draggable="false" src="https://img.icons8.com/plumpy/22/000000/home-page.png" />
                     </mat-icon>&nbsp;&nbsp;&nbsp;<label>HOME</label>
                 </div>
             </mat-list-item>
             <mat-list-item matRipple>
 
                 <div mat-line class="sidelink" routerLink='Gallery'>
-                    <mat-icon mat-list-icon><img src="https://img.icons8.com/plumpy/22/000000/image-gallery.png" /></mat-icon>
+                    <mat-icon mat-list-icon><img class="iconimg" draggable="false" src="https://img.icons8.com/plumpy/22/000000/image-gallery.png" /></mat-icon>
                     &nbsp;&nbsp;<label>GALLERY</label>
                 </div>
             </mat-list-item>
             <mat-list-item matRipple>
 
                 <div mat-line class="sidelink" routerLink='About'>
-                    <mat-icon mat-list-icon><img src="https://img.icons8.com/plumpy/22/000000/about.png" /></mat-icon>
+                    <mat-icon mat-list-icon><img class="iconimg" draggable="false" src="https://img.icons8.com/plumpy/22/000000/about.png" /></mat-icon>
                     &nbsp;&nbsp;<label>ABOUT</label>
                 </div>
             </mat-list-item>
@@ -32,19 +32,10 @@
             <mat-list-item matRipple>
 
                 <div mat-line class="sidelink" (click)="OpenNFTSheet()">
-                    <mat-icon mat-list-icon><img src="https://img.icons8.com/pastel-glyph/22/000000/nft.png" /></mat-icon>
+                    <mat-icon mat-list-icon><img class="iconimg" draggable="false" src="https://img.icons8.com/pastel-glyph/22/000000/nft.png" /></mat-icon>
                     &nbsp;&nbsp;<label>NFT</label>
                 </div>
             </mat-list-item>
-
-
-            <!-- <mat-list-item matRipple>
-
-                <div mat-line class="sidelink" (click)="Connect()">
-                    <mat-icon mat-list-icon><img src="https://img.icons8.com/plumpy/22/000000/user.png" /></mat-icon>
-                    &nbsp;&nbsp;<label>Connect</label>
-                </div>
-            </mat-list-item> -->
 
         </mat-list>
         <mat-divider></mat-divider>
@@ -57,6 +48,7 @@
                             <img
                                 src="https://img.icons8.com/fluent/35/000000/github.png" 
                                 draggable="false" 
+                                class="iconimg"
                             />
                         </a>
                     </span>&nbsp;&nbsp;
@@ -65,6 +57,7 @@
                             <img
                                 src="https://img.icons8.com/fluent/35/000000/twitter.png" 
                                 draggable="false" 
+                                class="iconimg"
                             />
                         </a>
                     </span>&nbsp;&nbsp;
@@ -73,6 +66,7 @@
                             <img
                                  src="https://img.icons8.com/fluent/35/000000/instagram-new.png" 
                                  draggable="false" 
+                                 class="iconimg"
                             />
                         </a>
                     </span>&nbsp;&nbsp;
@@ -81,6 +75,7 @@
                             <img
                                 src="https://img.icons8.com/fluent/35/000000/facebook-new.png" 
                                 draggable="false" 
+                                class="iconimg"
                             />
                         </a>
                     </span>&nbsp;&nbsp;
@@ -89,6 +84,7 @@
                             <img
                                 src="https://img.icons8.com/windows/30/000000/500px-new.png" 
                                 draggable="false" 
+                                class="iconimg"
                             />
                         </a>
                     </span>
@@ -100,17 +96,20 @@
     <!-- toolbar -->
     <mat-sidenav-content>
         <mat-toolbar class="toolbar mat-elevation-z6" *ngIf="offsetFlag" matRipple>
+
             <div fxHide.gt-xs>
                 <button mat-icon-button (click)="sidenav.toggle()">
-                        <img 
-                            src="https://img.icons8.com/plumpy/24/000000/menu--v1.png" 
-                            draggable="false"
-                        />
+                    <img  
+                    draggable="false"
+                    class="iconimg menuicon" 
+                    src="https://img.icons8.com/external-jumpicon-glyph-ayub-irawan/25/000000/external-_17-user-interface-jumpicon-(glyph)-jumpicon-glyph-ayub-irawan.png"/>
                     </button>
             </div>
+            &nbsp;
             <div>
                 <a routerLink=''><span class="title">RAMANATHAN</span></a>
             </div>
+
             <div fxFlex fxLayout fxLayoutAlign="end" fxHide.xs>
                 <ul fxLayout fxLayoutGap="15px" class="nav-item">
                     <li routerLink='Home'>
@@ -152,14 +151,14 @@
         <mat-menu #menu="matMenu">
             <a href="https://github.com/Ramanathan87/Ramanathan-Sks" target="_blank" rel="noopener noreferrer">
                 <button mat-menu-item>
-                    <img src="https://img.icons8.com/material-outlined/28/000000/source-code.png"/>
+                    <img class="iconimg" src="https://img.icons8.com/material-outlined/28/000000/source-code.png"/>
                     &nbsp;
                     <span>Code</span>
                 </button>
             </a>
             <a href="https://github.com/Ramanathan87/Ramanathan-Sks/issues" target="_blank" rel="noopener noreferrer">
                 <button mat-menu-item>
-                    <img src="https://img.icons8.com/material-outlined/28/000000/github.png"/>
+                    <img class="iconimg" src="https://img.icons8.com/material-outlined/28/000000/github.png"/>
                     &nbsp;
                     <span>Issues</span>
                 </button>
@@ -186,6 +185,7 @@
                                 src="https://img.icons8.com/fluent/42/000000/github.png" 
                                 draggable="false" 
                                 alt="GITHUB"
+                                class="iconimg"
                             />
                         </a>
                     </span>&nbsp;&nbsp;
@@ -196,6 +196,7 @@
                                 src="https://img.icons8.com/fluent/42/000000/twitter.png" 
                                 draggable="false" 
                                 alt="TWITTER"
+                                class="iconimg"
                             />
                         </a>
                     </span>&nbsp;&nbsp;
@@ -207,6 +208,7 @@
                                 src="https://img.icons8.com/fluent/42/000000/instagram-new.png" 
                                 draggable="false" 
                                 alt="INSTAGRAM"
+                                class="iconimg"
                             />
                         </a>
                     </span> &nbsp;&nbsp;
@@ -217,6 +219,7 @@
                                 src="https://img.icons8.com/fluent/42/000000/facebook-new.png" 
                                 draggable="false"
                                 alt="FACEBOOK"
+                                class="iconimg"
                             />
                         </a>
                     </span> &nbsp;&nbsp;
@@ -227,6 +230,7 @@
                                 src="https://img.icons8.com/windows/37/000000/500px-new.png" 
                                 draggable="false"
                                 alt="500PX"
+                                class="iconimg"
                             />
                         </a>
                     </span>
@@ -239,6 +243,6 @@
 
 
 
-<button *ngIf="!offsetFlag" matRipple id="myBtn" (click)="gotop()" matTooltip="Go Top"><img alt="GO TOP" src="https://img.icons8.com/small/25/000000/circled-up-2.png"/></button>
+<button *ngIf="!offsetFlag" matRipple id="myBtn" (click)="gotop()" matTooltip="Go Top"><mat-icon>keyboard_arrow_up</mat-icon></button>
 
 </html>

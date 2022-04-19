@@ -1,4 +1,4 @@
-import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule, Optional } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { environment } from 'src/environments/environment';
@@ -6,6 +6,7 @@ import { environment } from 'src/environments/environment';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireStorageModule} from '@angular/fire/storage';
+import { AngularFireAnalytics, AngularFireAnalyticsModule, CONFIG, ScreenTrackingService, UserTrackingService } from '@angular/fire/analytics';
 
 import {MaterialModule} from './material/material.module'
 
@@ -43,12 +44,27 @@ import {BottomSheetNFT} from './app.component';
     AngularFireModule.initializeApp(
       environment.firebase
     ),
+    AngularFireAnalyticsModule,
     AngularFireStorageModule,
     AngularFirestoreModule,
     CrystalLightboxModule
   ],
-  providers: [],
+  providers: [ScreenTrackingService,UserTrackingService,{ provide: CONFIG, useValue: {
+    send_page_view: true,
+    allow_ad_personalization_signals: true,
+    anonymize_ip: true
+  } }],
   bootstrap: [AppComponent],
   schemas:[],
 })
-export class AppModule { }
+export class AppModule {
+
+  constructor(
+    analytics: AngularFireAnalytics,
+    @Optional() screenTracking: ScreenTrackingService,
+    @Optional() userTracking: UserTrackingService
+  ) {
+    // calling anything on analytics will eagerly load the SDK
+    analytics.app;
+  }
+ }

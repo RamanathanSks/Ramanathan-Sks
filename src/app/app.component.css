@@ -138,6 +138,16 @@ mat-sidenav {
     color: rgb(194, 194, 194);
 }
 
+.iconimg {
+    image-rendering: crisp-edges;
+    image-resolution: inherit;
+    text-decoration: none;
+}
+
+.menuicon {
+    padding-bottom: 2px;
+}
+
 .container {
     width: auto;
     text-align: center;
