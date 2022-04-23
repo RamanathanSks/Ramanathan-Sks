@@ -6,6 +6,13 @@ html {
     scroll-behavior: smooth;
 }
 
+.titleimg {
+    position: relative;
+    height: 85px;
+    width: auto;
+    image-rendering: inherit;
+}
+
 mat-sidenav-conatiner,
 mat-sidenav-content,
 mat-sidenav {
@@ -63,6 +70,10 @@ mat-sidenav {
     position: -webkit-sticky;
     top: 0;
     z-index: 1000;
+    -webkit-background: rgba(39, 39, 39, 0.40);
+    -moz-background: rgba(39, 39, 39, 0.40);
+    -o-background: rgba(39, 39, 39, 0.40);
+    background: rgba(39, 39, 39, 0.40);
     -webkit-background-color: rgba(39, 39, 39, 0.40);
     -moz-background-color: rgba(39, 39, 39, 0.40);
     -o-background-color: rgba(39, 39, 39, 0.40);
@@ -136,6 +147,11 @@ mat-sidenav {
     text-transform: uppercase;
     height: 50px;
     color: rgb(194, 194, 194);
+    vertical-align: middle;
+}
+
+.sidenavIcon {
+    padding-right: 10px;
 }
 
 .iconimg {
@@ -198,6 +214,10 @@ mat-toolbar {
 
 .nftMenu {
     cursor: pointer;
+}
+
+.full-width {
+    width: 100%;
 }
 
 @media(max-width:950px) {

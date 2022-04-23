@@ -7,7 +7,7 @@
 
 .about_me {
     height: auto;
-    background-color: rgba(255, 255, 255, 0.795);
+    background-color: rgb(249, 249, 249);
     padding: 25px;
     text-align: justify;
     text-justify: inter-word;
@@ -44,8 +44,16 @@ body {
     -moz-background-position: center;
     -o-background-position: center;
     background-position: center;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(85, 85, 85, 0.799);
     /* background-image: url("https://firebasestorage.googleapis.com/v0/b/ram-port.appspot.com/o/home%2F1.jpeg?alt=media&token=144d6157-4157-48e8-83ac-9c6567384c43"); */
+}
+
+img {
+    image-rendering: optimizeQuality;
+    border-radius: 5px;
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
 }
 
 html {

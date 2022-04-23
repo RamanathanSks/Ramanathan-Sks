@@ -17,7 +17,7 @@ import { AngularFireAnalytics } from '@angular/fire/analytics';
 
 })
 export class AppComponent implements OnInit {
-  title = 'rdem';
+  title = 'Ramanathan';
   name: string = "";
   isOpen = false;
   status: string = "";
@@ -25,15 +25,20 @@ export class AppComponent implements OnInit {
   col = "primary"
   durationInSeconds = 5;
   currentUrl: any;
-  hide=true
+  hide = true
 
-  constructor(private analytics: AngularFireAnalytics,private imgser: ImageserviceService, private _bottomSheet: MatBottomSheet,public dialog: MatDialog, private route: Router, private _snackBar: MatSnackBar) {
-    // analytics.app;
+  constructor(
+    private imgser: ImageserviceService, 
+    private _bottomSheet: MatBottomSheet, 
+    public dialog: MatDialog, 
+    private route: Router, 
+    private _snackBar: MatSnackBar)
+    {
     if (this.imgser.onFirstLoad) {
       this.imgser.onFirstLoad = false;
     }
   }
-  Connect(){
+  Connect() {
     this._bottomSheet.open(BottomSheet);
   }
   @ViewChild(MatMenuTrigger) trigger!: MatMenuTrigger;
@@ -41,8 +46,10 @@ export class AppComponent implements OnInit {
   openNFTmenu() {
     this.trigger.openMenu();
   }
-
-  OpenNFTSheet(){
+  closeNFTmenu() {
+    this.trigger.closeMenu();
+  }
+  OpenNFTSheet() {
     this._bottomSheet.open(BottomSheetNFT);
   }
 
@@ -58,25 +65,19 @@ export class AppComponent implements OnInit {
       map(x => x.type)).subscribe(res => {
         this.status = res;
         this.stateChange.emit(res);
-        
         if (res == 'offline') {
-          this.currentUrl=this.route.url;
+          this.currentUrl = this.route.url;
           this.route.navigateByUrl("b2ZmbGluZQ");
         }
-        if (res == 'online') {
-          this.route.navigateByUrl(this.currentUrl);
-
-        }
+        if (res == 'online') this.route.navigateByUrl(this.currentUrl);
       });
 
   }
   offsetFlag = true;
   @HostListener('window:scroll', ['$event'])
   getScrollHeight(event: any) {
-    if (window.pageYOffset > 2500)
-      this.offsetFlag = false;
-    else
-      this.offsetFlag = true;
+    if (window.pageYOffset > 2500) this.offsetFlag = false;
+    else this.offsetFlag = true;
   }
 
 
@@ -86,23 +87,17 @@ export class AppComponent implements OnInit {
     event.preventDefault();
   }
 
-  gotop(){
-    window.scroll(0,0);
+  gotop() {
+    window.scroll(0, 0);
   }
-  gobottom(){
-    window.scroll(0,1999999);
-  }
+
   openbarcode(): void {
     const bardialog = this.dialog.open(barcodeDialog, {
       width: "auto",
-      position: {
-        bottom: '6%',
-      },
+      position: { bottom: '6%' },
     });
 
-    bardialog.afterClosed().subscribe(res => {
-      console.log("INSTAGRAM LINK")
-    })
+    bardialog.afterClosed().subscribe()
   }
   closebarcode(): void {
     this.dialog.closeAll();
@@ -127,7 +122,7 @@ export class barcodeDialog { }
   templateUrl: 'bottom-sheet.html',
 })
 export class BottomSheet {
-  constructor(private _bottomSheetRef: MatBottomSheetRef<BottomSheet>) {}
+  constructor(private _bottomSheetRef: MatBottomSheetRef<BottomSheet>) { }
 
   openLink(event: MouseEvent): void {
     this._bottomSheetRef.dismiss();
@@ -141,7 +136,7 @@ export class BottomSheet {
   templateUrl: 'bottom-sheet2.html',
 })
 export class BottomSheetNFT {
-  constructor(private _bottomSheetRef2: MatBottomSheetRef<BottomSheet>) {}
+  constructor(private _bottomSheetRef2: MatBottomSheetRef<BottomSheet>) { }
 
   openLink(event: MouseEvent): void {
     this._bottomSheetRef2.dismiss();
