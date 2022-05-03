@@ -27,12 +27,10 @@ mat-sidenav {
 
 .fontcl {
     color: rgb(243, 243, 243);
-    opacity: 80%;
 }
 
 .fontcl:hover {
     transition: cubic-bezier(0.075, 0.82, 0.165, 1);
-    opacity: 100%;
     color: white;
 }
 
@@ -67,6 +65,7 @@ mat-sidenav {
 
 .toolbar {
     position: fixed;
+    content: '';
     position: -webkit-sticky;
     top: 0;
     z-index: 1000;
@@ -86,6 +85,22 @@ mat-sidenav {
     -moz-transition: all .9s ease-in-out !important;
     -o-transition: all .9s ease-in-out !important;
     transition: all .9s ease-in-out !important;
+}
+
+.toolbar:before {
+    content: '';
+    -webkit-background: rgba(39, 39, 39, 0.40);
+    -moz-background: rgba(39, 39, 39, 0.40);
+    -o-background: rgba(39, 39, 39, 0.40);
+    background: rgba(39, 39, 39, 0.40);
+    -webkit-background-color: rgba(39, 39, 39, 0.40);
+    -moz-background-color: rgba(39, 39, 39, 0.40);
+    -o-background-color: rgba(39, 39, 39, 0.40);
+    background-color: rgba(39, 39, 39, 0.40);
+    -webkit-backdrop-filter: blur(10px) contrast(100%) saturate(100%) brightness(100%);
+    -moz-backdrop-filter: blur(10px) contrast(100%) saturate(100%) brightness(100%);
+    -o-backdrop-filter: blur(10px) contrast(100%) saturate(100%) brightness(100%);
+    backdrop-filter: blur(10px) contrast(100%) saturate(100%) brightness(100%);
 }
 
 .footer {

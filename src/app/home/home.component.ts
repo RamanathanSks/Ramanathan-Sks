@@ -11,6 +11,7 @@ export class HomeComponent implements OnInit,OnDestroy {
   
   @ViewChild('homebg')HomeBg:ElementRef | undefined;
   cardsimgList: any[] =[];
+  color="none";
   isiosdev: boolean = false;
   HomeSub!: Subscription;
   constructor(private imgser: ImageserviceService, private title: Title) {
@@ -22,9 +23,13 @@ export class HomeComponent implements OnInit,OnDestroy {
     else 
       this.isiosdev = true;
   }
- 
+  changeColor(){
+    this.color = this.color=="none"?"warn":"none";
+    
+  }
   
- 
+  imgurl="https://firebasestorage.googleapis.com/v0/b/ram-port.appspot.com/o/me.bw.jpeg?alt=media&token=82107549-f6a1-4383-8785-ade33a391c16"
+
 
   ngOnInit(): void {
     this.HomeSub = this.imgser.getCardImgObs().subscribe(i=>{

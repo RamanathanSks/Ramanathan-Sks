@@ -122,8 +122,10 @@ export class barcodeDialog { }
   templateUrl: 'bottom-sheet.html',
 })
 export class BottomSheet {
-  constructor(private _bottomSheetRef: MatBottomSheetRef<BottomSheet>) { }
-
+  mailLink="mailto:ramanathan.sks@gmail.com";
+  constructor(private imgser: ImageserviceService,private _bottomSheetRef: MatBottomSheetRef<BottomSheet>) {
+    var device = this.imgser.getMobileorDeskyopSystem();
+  }
   openLink(event: MouseEvent): void {
     this._bottomSheetRef.dismiss();
     event.preventDefault();

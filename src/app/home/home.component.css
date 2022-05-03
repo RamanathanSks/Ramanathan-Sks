@@ -18,6 +18,10 @@ body {
     color: rgba(255, 255, 255, 0.973);
 }
 
+.spacer {
+    flex: 1 1 auto;
+}
+
 html {
     height: 100%;
     overflow: hidden;
@@ -272,13 +276,17 @@ img {
     text-align: center;
 }
 
-.card .details h2 {
+.card .details {
     margin: 0;
     padding: 0;
     font-weight: 600;
     font-size: 20px;
     color: #777;
     text-transform: uppercase;
+}
+
+.card .details span+span {
+    padding-left: 5em;
 }
 
 .wrapper {
@@ -380,4 +388,55 @@ img {
 
 .bg2::after {
     background-image: url("https://firebasestorage.googleapis.com/v0/b/ram-port.appspot.com/o/home%2F3.JPG?alt=media&token=294c79b3-4245-48ec-a8a0-4083a6165005");
+}
+
+.about {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 2%;
+    padding-top: 3%;
+    font-weight: 400;
+    padding-bottom: 200px;
+}
+
+.about_me {
+    height: auto;
+    /* background-color: rgb(249, 249, 249); */
+    padding: 25px;
+    text-align: justify;
+    text-justify: inter-word;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.imgMine {
+    padding-bottom: 3%;
+    text-align: center;
+}
+
+.imgMine img {
+    box-shadow: 0 3px 5px -1px #0003, 0 6px 10px #00000024, 0 1px 18px #0000001f;
+}
+
+.abt {
+    padding-top: 80px;
+    font-size: 75px;
+    width: 100vw;
+    text-align: center;
+    color: rgb(41, 41, 41);
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 100;
+    pointer-events: none;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 0.5;
+}
+
+p {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20px;
+    letter-spacing: 0em;
+    line-height: 1.55em;
+    text-transform: none;
 }

@@ -56,7 +56,16 @@ export class ImageserviceService {
     }
     return "unknown";
   }
-
+  getMobileorDeskyopSystem() {
+    var userAgent = navigator.vendor;
+    if (/windows|window|/i.test(navigator.userAgent)) {
+      return "DESK";
+    }
+    if(/phone|android|iPad|iPhone/i.test(navigator.userAgent)){
+      return "PHN"
+    }
+    return "unknown";
+  }
 }
 
 
