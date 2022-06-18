@@ -1,4 +1,4 @@
-# Ram-Port[ramanathan-sks] Protfolio
+# ramanathan-sks Protfolio
 
 ## Deployed [Ramanathan Sks](https://ramanathan-sks.web.app)
 
