@@ -1,7 +1,7 @@
-import { Component, ElementRef, EventEmitter, HostListener, OnInit, Output, ViewChild } from '@angular/core';
+import { Component, ElementRef, EventEmitter, HostListener, OnChanges, OnDestroy, OnInit, Output, SimpleChanges, ViewChild } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { getWindow } from './window';
-import { fromEvent, merge } from 'rxjs';
+import { fromEvent, merge, Subscription } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { MatSnackBar } from '@angular/material/snack-bar';
 
@@ -10,13 +10,15 @@ import { Router } from '@angular/router'
 import { MatBottomSheet, MatBottomSheetRef } from '@angular/material/bottom-sheet';
 import { MatMenuTrigger } from '@angular/material/menu';
 import { AngularFireAnalytics } from '@angular/fire/analytics';
+import { ThemePalette } from '@angular/material/core';
+import { ProgressBarMode } from '@angular/material/progress-bar';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 
 })
-export class AppComponent implements OnInit {
+export class AppComponent implements OnInit ,OnDestroy{
   title = 'Ramanathan';
   name: string = "";
   isOpen = false;
@@ -25,19 +27,27 @@ export class AppComponent implements OnInit {
   col = "primary"
   durationInSeconds = 5;
   currentUrl: any;
-  hide = true
+  hide: boolean = true
 
+  loader: boolean = false;
+  color: ThemePalette = 'primary';
+  mode: ProgressBarMode = 'indeterminate';
+
+  CarouselSub!: Subscription;
+  TilesSub!: Subscription;
+  ImageListSub!: Subscription;
+  CardSub!: Subscription;
   constructor(
-    private imgser: ImageserviceService, 
-    private _bottomSheet: MatBottomSheet, 
-    public dialog: MatDialog, 
-    private route: Router, 
-    private _snackBar: MatSnackBar)
-    {
+    private imgser: ImageserviceService,
+    private _bottomSheet: MatBottomSheet,
+    public dialog: MatDialog,
+    private route: Router,
+    private _snackBar: MatSnackBar) {
     if (this.imgser.onFirstLoad) {
       this.imgser.onFirstLoad = false;
     }
   }
+  
   Connect() {
     this._bottomSheet.open(BottomSheet);
   }
@@ -55,8 +65,12 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
 
+    this.getAllData();
+
+
     const { onLine } = getWindow().navigator;
     this.status = onLine ? 'online' : 'offline'
+
     this.stateChange.emit(this.status);
     merge(
       fromEvent<Event>(getWindow(), 'online'),
@@ -72,7 +86,46 @@ export class AppComponent implements OnInit {
         if (res == 'online') this.route.navigateByUrl(this.currentUrl);
       });
 
+
   }
+
+  
+
+
+  ngOnDestroy(): void {
+
+    this.CarouselSub.unsubscribe();
+    this.TilesSub.unsubscribe();
+    this.ImageListSub.unsubscribe();
+    this.CardSub.unsubscribe();
+    
+  }
+  getAllData() {
+    this.CarouselSub = this.imgser.getCarouselObs$().subscribe(sub => {
+      if (sub) {
+        // console.log("getCarouselObs success");
+      }
+    });
+    this.TilesSub = this.imgser.getTitlesObs$().subscribe(sub => {
+      if (sub) {
+        // console.log("getTitlesObs success");
+      }
+    });
+    this.ImageListSub=this.imgser.getImgageObs$().subscribe(sub=>{
+      if(sub){
+        // console.log("getImgageObs success");
+        
+      }
+    });
+    this.CardSub=this.imgser.getCardImgObs$().subscribe(sub=>{
+      if(sub){
+        // console.log("Data Updated");
+        this.loader = true;
+      }
+    });
+    
+  }
+
   offsetFlag = true;
   @HostListener('window:scroll', ['$event'])
   getScrollHeight(event: any) {
@@ -81,15 +134,24 @@ export class AppComponent implements OnInit {
   }
 
 
+
+
+
   @HostListener('contextmenu', ['$event'])
   onRightClick(event: any) {
     this.openSnackBar("Disabled ⛔");
     event.preventDefault();
   }
 
+
+
+
   gotop() {
     window.scroll(0, 0);
   }
+
+
+
 
   openbarcode(): void {
     const bardialog = this.dialog.open(barcodeDialog, {
@@ -111,19 +173,33 @@ export class AppComponent implements OnInit {
 
 }
 
+
+
+
+
+
+
+
+
 @Component({
   selector: 'barcode',
   templateUrl: './barcodeDialog.html',
 })
 export class barcodeDialog { }
 
+
+
+
+
+
+//bottom sheet
 @Component({
   selector: 'bottom-sheet',
   templateUrl: 'bottom-sheet.html',
 })
 export class BottomSheet {
-  mailLink="mailto:ramanathan.sks@gmail.com";
-  constructor(private imgser: ImageserviceService,private _bottomSheetRef: MatBottomSheetRef<BottomSheet>) {
+  mailLink = "mailto:ramanathan.sks@gmail.com";
+  constructor(private imgser: ImageserviceService, private _bottomSheetRef: MatBottomSheetRef<BottomSheet>) {
     var device = this.imgser.getMobileorDeskyopSystem();
   }
   openLink(event: MouseEvent): void {

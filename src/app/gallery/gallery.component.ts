@@ -17,13 +17,12 @@ export class GalleryComponent implements OnInit,OnDestroy,AfterViewInit {
   carouselImgList: any[] = [];
   tilesImgList: any[]= [];
   imageList: any[] = [];
-  CarouselSub!:Subscription;
-  TilesSub!:Subscription;
-  ImageListSub!:Subscription;
+  // CarouselSub!:Subscription;
+  // TilesSub!:Subscription;
+  // ImageListSub!:Subscription;
   onload:boolean=false;
   
-  color: ThemePalette = 'primary';
-  mode: ProgressBarMode = 'indeterminate';
+  
   loader: boolean = true;
   constructor(private imgser: ImageserviceService, title: Title) {
     title.setTitle("Gallery | Ramanathan");
@@ -38,39 +37,15 @@ export class GalleryComponent implements OnInit,OnDestroy,AfterViewInit {
   ngOnInit(): void {
     
     this.onload=true;
-    this.CarouselSub = this.imgser.getCarouselObs().subscribe(i=>{
-      var carouselObj:any[]=i;
-      if(this.carouselImgList.length==0){
-        carouselObj.map(img=>{
-          this.carouselImgList.push(img);
-        });
-      }
-      
-    });
 
-    this.TilesSub = this.imgser.getTitlesObs().subscribe(i=>{
-      var titleObj:any[]=i;
-      if(this.tilesImgList.length==0){
-        titleObj.map(img=>{
-          this.tilesImgList.push(img);
-        });
-      }
-      
-    });
-    
-    this.ImageListSub = this.imgser.getImgageObs().subscribe(i=>{
-      var imageObj:any[]=i;
-      if(this.imageList.length==0){
-        imageObj.map(img=>{
-          this.imageList.push(img);
-        });
-      }
-    });
+    this.carouselImgList=this.imgser.getCarousel()
+    this.tilesImgList=this.imgser.getTitles();
+    this.imageList=this.imgser.getimgageLst();
   }
 
   ngOnDestroy(): void {
-    this.CarouselSub.unsubscribe();
-    this.TilesSub.unsubscribe();
-    this.ImageListSub.unsubscribe();
+    // this.CarouselSub.unsubscribe();
+    // this.TilesSub.unsubscribe();
+    // this.ImageListSub.unsubscribe();
   }
 }

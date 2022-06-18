@@ -16,11 +16,19 @@ body {
 }
 
 .space {
-    height: 2px;
+    height: 0px;
+}
+
+.carousel-control-prev {
+    cursor: url('../Icons/arrow_back_ios_white_48dp.svg'), auto;
+}
+
+.carousel-control-next {
+    cursor: url('../Icons/arrow_forward_ios_white_48dp.svg'), auto;
 }
 
 img {
-    image-rendering: optimizeSpeed;
+    image-rendering: optimizeQuality;
     object-fit: fill;
     cursor: pointer;
     -webkit-user-select: none;
@@ -67,7 +75,7 @@ img {
     }
 }
 
-@media only screen and (max-device-width: 1366px) {
+@media (max-width:950px) {
     .space {
         height: 45px;
     }
@@ -75,4 +83,8 @@ img {
 
 .tiles {
     backdrop-filter: blur(20px) contrast(110%);
+}
+
+.tilesImg {
+    cursor: url('../Icons/pan_tool_alt_black_44dp.svg'), auto;
 }

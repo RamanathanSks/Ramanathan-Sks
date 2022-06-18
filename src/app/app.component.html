@@ -179,7 +179,9 @@
 
         <!-- Main -->
         <main>
-            <router-outlet>
+            <span><mat-progress-bar *ngIf="!loader" style="height: 7px;" class="example-margin;" [color]="color" [mode]="mode">
+            </mat-progress-bar></span>
+            <router-outlet *ngIf="loader">
 
             </router-outlet>
         </main>

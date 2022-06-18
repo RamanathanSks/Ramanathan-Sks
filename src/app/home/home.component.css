@@ -109,12 +109,12 @@ section:before {
 
 
 /* 
-.normal-scroll {
-    background: #fff;
-    width: 100%;
-    min-height: 1%;
-    transform: translateZ(0px);
-} */
+  .normal-scroll {
+      background: #fff;
+      width: 100%;
+      min-height: 1%;
+      transform: translateZ(0px);
+  } */
 
 .container {
     color: #ccc;
@@ -297,7 +297,7 @@ img {
     perspective: 8px;
     -ms-overflow-style: unset;
     -webkit-overflow-style: unset;
-    -o-overflow-style: unset
+    -o-overflow-style: unset;
 }
 
 .section {
@@ -332,7 +332,7 @@ img {
     z-index: -4;
 }
 
-@media(max-width:950px) {
+@media (max-width:950px) {
     .parallax::after {
         content: " ";
         position: absolute;
