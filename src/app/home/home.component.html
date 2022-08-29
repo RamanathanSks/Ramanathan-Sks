@@ -49,7 +49,7 @@
                                 <mat-icon>open_in_new</mat-icon>
                             </button>
                         </span>
-                        <span><button mat-icon-button [color]="getColor(i.url,i.likeCnt)" [matTooltip]="'❤️ '+i.likeCnt"  (click)="changeColor(i.url)" >
+                        <span><button mat-icon-button [color]="getColor(i.url,i.likeCnt)" (click)="changeColor(i.url)" >
                             <mat-icon>favorite</mat-icon>
                         </button></span>
                         <!-- <span>{{i.des}}</span>

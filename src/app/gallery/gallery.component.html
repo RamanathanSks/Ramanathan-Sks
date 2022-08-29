@@ -50,7 +50,7 @@
         <mat-grid-list class="tiles" cols="2" rowHeight="1.9:1.5 ">
             <mat-grid-tile [ngStyle]="{'background': 'url(' + tile.url + ')'}" *ngFor="let tile of tilesImgList">
                 <div>
-                    <img [src]="tile.url" loading="lazy" class="d-block w-100 tilesImg" lightbox alt="Loading..." draggable="false">
+                    <img [src]="tile.url" loading="lazy" class="d-block w-100 tilesImg" lightbox alt="Loading..."  draggable="false">
                 </div>
             </mat-grid-tile>
         </mat-grid-list>
