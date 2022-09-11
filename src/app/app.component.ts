@@ -12,6 +12,7 @@ import { MatMenuTrigger } from '@angular/material/menu';
 import { AngularFireAnalytics } from '@angular/fire/analytics';
 import { ThemePalette } from '@angular/material/core';
 import { ProgressBarMode } from '@angular/material/progress-bar';
+import { environment } from 'src/environments/environment';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -32,7 +33,14 @@ export class AppComponent implements OnInit ,OnDestroy{
   loader: boolean = false;
   color: ThemePalette = 'primary';
   mode: ProgressBarMode = 'indeterminate';
-
+  githuburl:string;
+  codeurl:string;
+  issueurl:string;
+  instagramurl:string;
+  facebookurl:string;
+  twitterurl:string;
+  fhpixurl:string;
+  nfturl:string;
   CarouselSub!: Subscription;
   TilesSub!: Subscription;
   ImageListSub!: Subscription;
@@ -43,6 +51,14 @@ export class AppComponent implements OnInit ,OnDestroy{
     public dialog: MatDialog,
     private route: Router,
     private _snackBar: MatSnackBar) {
+    this.githuburl=environment.GITHUB_URL;
+    this.codeurl=environment.CODE_URL;
+    this.issueurl=environment.ISSUE_URL;
+    this.instagramurl=environment.INSTAGRAM_URL;
+    this.facebookurl=environment.FACEBOOK_URL;
+    this.fhpixurl=environment.FHPIX_URL;
+    this.twitterurl=environment.TWITTER_URL;
+    this.nfturl=environment.NFT_URL;
     if (this.imgser.onFirstLoad) {
       this.imgser.onFirstLoad = false;
     }
@@ -129,7 +145,7 @@ export class AppComponent implements OnInit ,OnDestroy{
   offsetFlag = true;
   @HostListener('window:scroll', ['$event'])
   getScrollHeight(event: any) {
-    if (window.pageYOffset > 2500) this.offsetFlag = false;
+    if (window.pageYOffset > 2000) this.offsetFlag = false;
     else this.offsetFlag = true;
   }
 
@@ -185,7 +201,12 @@ export class AppComponent implements OnInit ,OnDestroy{
   selector: 'barcode',
   templateUrl: './barcodeDialog.html',
 })
-export class barcodeDialog { }
+export class barcodeDialog { 
+  instagramurl:string;
+  constructor(){
+    this.instagramurl=environment.INSTAGRAM_URL;
+  }
+}
 
 
 

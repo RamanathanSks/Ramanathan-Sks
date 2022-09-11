@@ -57,7 +57,7 @@
             <div class="container">
 
                 <span class="text-muted">
-                    <a class="sidenavSM" target="_blank" href="https://github.com/Ramanathan87">
+                    <a class="sidenavSM" target="_blank" [href]="githuburl">
                         <img
                             src="https://img.icons8.com/fluent/35/000000/github.png" 
                             draggable="false" 
@@ -66,7 +66,7 @@
                     </a>
                 </span>&nbsp;&nbsp;
                 <span class="text-muted">
-                    <a class="sidenavSM" target="_blank" href="https://twitter.com/SksRamanathan">
+                    <a class="sidenavSM" target="_blank" [href]="twitterurl">
                         <img
                             src="https://img.icons8.com/fluent/35/000000/twitter.png" 
                             draggable="false" 
@@ -75,7 +75,7 @@
                     </a>
                 </span>&nbsp;&nbsp;
                 <span class="text-muted">
-                    <a class="sidenavSM" target="_blank" href="https://www.instagram.com/ramanathan_sks/">
+                    <a class="sidenavSM" target="_blank" [href]="instagramurl">
                         <img
                                 src="https://img.icons8.com/fluent/35/000000/instagram-new.png" 
                                 draggable="false" 
@@ -84,7 +84,7 @@
                     </a>
                 </span>&nbsp;&nbsp;
                 <span class="text-muted">
-                    <a class="sidenavSM" target="_blank" href="https://www.facebook.com/ramakiphotograph">
+                    <a class="sidenavSM" target="_blank" [href]="facebookurl">
                         <img
                             src="https://img.icons8.com/fluent/35/000000/facebook-new.png" 
                             draggable="false" 
@@ -93,7 +93,7 @@
                     </a>
                 </span>&nbsp;&nbsp;
                 <span class="text-muted">
-                    <a class="sidenavSM" target="_blank" href="https://500px.com/p/ramanathansks">
+                    <a class="sidenavSM" target="_blank" [href]="fhpixurl">
                         <img
                             src="https://img.icons8.com/windows/30/000000/500px-new.png" 
                             draggable="false" 
@@ -151,14 +151,14 @@
 
         <!-- Git Menu Content -->
         <mat-menu #menu="matMenu">
-            <a href="https://github.com/Ramanathan87/Ramanathan-Sks" target="_blank" rel="noopener noreferrer">
+            <a [href]="codeurl" target="_blank" rel="noopener noreferrer">
                 <button mat-menu-item>
                     <img class="iconimg" src="https://img.icons8.com/material-outlined/28/000000/source-code.png"/>
                     &nbsp;
                     <span>Code</span>
                 </button>
             </a>
-            <a href="https://github.com/Ramanathan87/Ramanathan-Sks/issues" target="_blank" rel="noopener noreferrer">
+            <a [href]="issueurl" target="_blank" rel="noopener noreferrer">
                 <button mat-menu-item>
                     <img class="iconimg" src="https://img.icons8.com/material-outlined/28/000000/github.png"/>
                     &nbsp;
@@ -168,7 +168,7 @@
         </mat-menu>
         <!-- NFT Menu Content -->
         <mat-menu #beforeMenu="matMenu" xPosition="before">
-            <a href="https://opensea.io/RamAki" target="_blank" rel="noopener noreferrer">
+            <a [href]="nfturl" target="_blank" rel="noopener noreferrer">
                 <button mat-menu-item (mouseleave)="closeNFTmenu()">
                     <img src="https://storage.googleapis.com/opensea-static/Logomark/Logomark-Blue.png" height="30px" width="auto"/>
                     &nbsp;
@@ -194,7 +194,7 @@
             <div class="container">
 
                 <span class="text-muted" matTooltip="github">
-                        <a class="smlnk" target="_blank" href="https://github.com/Ramanathan87">
+                        <a class="smlnk" target="_blank" [href]="githuburl">
                             <img
                                 src="https://img.icons8.com/fluent/42/000000/github.png" 
                                 draggable="false" 
@@ -205,7 +205,7 @@
                     </span>&nbsp;&nbsp;
 
                 <span class="text-muted" matTooltip="twitter">
-                        <a class="smlnk" target="_blank" href="https://twitter.com/SksRamanathan">
+                        <a class="smlnk" target="_blank" [href]="twitterurl">
                             <img
                                 src="https://img.icons8.com/fluent/42/000000/twitter.png" 
                                 draggable="false" 
@@ -228,7 +228,7 @@
                     </span> &nbsp;&nbsp;
 
                 <span class="text-muted" matTooltip="facebook">
-                        <a class="smlnk" target="_blank" href="https://www.facebook.com/ramakiphotograph">
+                        <a class="smlnk" target="_blank" [href]="facebookurl">
                             <img 
                                 src="https://img.icons8.com/fluent/42/000000/facebook-new.png" 
                                 draggable="false"
@@ -239,7 +239,7 @@
                     </span> &nbsp;&nbsp;
 
                 <span class="text-muted" matTooltip="500px">
-                        <a class="smlnk" target="_blank" href="https://500px.com/p/ramanathansks">
+                        <a class="smlnk" target="_blank" [href]="fhpixurl">
                             <img 
                                 src="https://img.icons8.com/windows/37/000000/500px-new.png" 
                                 draggable="false"

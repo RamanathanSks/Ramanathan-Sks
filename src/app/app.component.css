@@ -238,6 +238,10 @@ mat-toolbar {
 @media(max-width:950px) {
     mat-toolbar {
         border-radius: 0px;
+        background: rgba(168, 168, 168, 0.3);
+        -webkit-backdrop-filter: blur(14px);
+        backdrop-filter: blur(14px);
+
     }
 }
 
