@@ -145,7 +145,7 @@ export class AppComponent implements OnInit ,OnDestroy{
   offsetFlag = true;
   @HostListener('window:scroll', ['$event'])
   getScrollHeight(event: any) {
-    if (window.pageYOffset > 2000) this.offsetFlag = false;
+    if (window.pageYOffset > 2500) this.offsetFlag = false;
     else this.offsetFlag = true;
   }
 

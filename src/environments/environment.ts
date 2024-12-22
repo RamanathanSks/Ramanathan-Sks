@@ -19,7 +19,7 @@ export const environment = {
   CODE_URL:"https://github.com/RamanathanSks/Ramanathan-Sks",
   ISSUE_URL:"https://github.com/RamanathanSks/Ramanathan-Sks/issues",
   INSTAGRAM_URL:"https://www.instagram.com/ramanathan_sks/",
-  TWITTER_URL:"https://twitter.com/ramanathan_sks",
+  TWITTER_URL:"https://twitter.com/SksRamanathan",
   FACEBOOK_URL:"https://www.facebook.com/ramakiphotograph",
   FHPIX_URL:"https://500px.com/p/ramanathansks",
   NFT_URL:"https://opensea.io/RamAki"

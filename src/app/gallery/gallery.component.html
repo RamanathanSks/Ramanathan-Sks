@@ -1,33 +1,94 @@
 <html>
 
-<div>
-    <div class="space"></div>
-</div>
+<body>
+    <div *ngIf="isiosdev" class="wrapper">
+        <div class="section parallax bg1"></div>
 
+        <div class="section static"></div>
 
-<body lightbox-group>
+        <div class="section parallax bg2"></div>
 
+        <div class="section static1"></div>
+    </div>
+
+    <div *ngIf="!isiosdev" class="homehtml">
+        <div class="homebody">
+            <section id="hero-1">
+                <div class="container"></div>
+            </section>
+
+            <section id="hero-2">
+                <div class="container"></div>
+            </section>
+
+            <section id="hero-3">
+                <div class="container"></div>
+            </section>
+
+            <section id="hero-4">
+                <div class="container"></div>
+            </section>
+        </div>
+    </div>
+    <div class="subtitle">
+        <h1>Social</h1>
+        <h3>Follow my work on <a href="https://www.instagram.com/ramanathan_sks/" target="_blank">Instagram</a></h3>
+    </div>
+    <div class="cardsRDEM">
+        <div class="box">
+            <div class="card" *ngFor="let i of cardsimgList">
+                <div class="imgBx">
+                    <img [src]="i.url" draggable="false" class="d-block w-100" loading="lazy" alt="Loading...">
+                </div>
+                <div class="details">
+                    <div>
+                        <span>
+
+                            <button matTooltip="View More.." mat-icon-button>
+                                <!-- (click)="viewPhoto()" -->
+                                <mat-icon>open_in_new</mat-icon>
+                            </button>
+                        </span>
+                        <span><button mat-icon-button [color]="getColor(i.url,i.likeCnt)" (click)="changeColor(i.url)">
+                                <mat-icon>favorite</mat-icon>
+                            </button></span>
+                        <!-- <span>{{i.des}}</span>
+                        <span>{{i.des}}</span> [matTooltip]="'❤️ '+i.likeCnt"-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
 
         <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                aria-label="Slide 5"></button>
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active ">
-                <img [src]="carouselImgList[0].url" decoding="async" loading="lazy" class="d-block w-100" alt="img1" draggable="false">
+                <img [src]="carouselImgList[0].url" decoding="async" loading="lazy" class="d-block w-100" alt="img1"
+                    draggable="false">
             </div>
             <div class="carousel-item">
-                <img [src]="carouselImgList[4].url" decoding="async" loading="lazy" class="d-block w-100" alt="img2" draggable="false">
+                <img [src]="carouselImgList[4].url" decoding="async" loading="lazy" class="d-block w-100" alt="img2"
+                    draggable="false">
             </div>
             <div class="carousel-item">
-                <img [src]="carouselImgList[3].url" decoding="async" loading="lazy" class="d-block w-100" alt="img3" draggable="false">
+                <img [src]="carouselImgList[3].url" decoding="async" loading="lazy" class="d-block w-100" alt="img3"
+                    draggable="false">
             </div>
             <div class="carousel-item">
-                <img [src]="carouselImgList[1].url" decoding="async" loading="lazy" class="d-block w-100" alt="img4" draggable="false">
+                <img [src]="carouselImgList[1].url" decoding="async" loading="lazy" class="d-block w-100" alt="img4"
+                    draggable="false">
             </div>
             <div class="carousel-item">
                 <img [src]="carouselImgList[2].url" decoding="async" loading="lazy" class="d-block w-100" alt="img5">
@@ -35,33 +96,18 @@
 
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-            <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
-            <span class="visually-hidden" >Previous</span>
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-      <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
-      <span class="visually-hidden">Next</span>
-    </button>
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        <br>
+        <br>
+        <br>
+        <br>
     </div>
-    <mat-divider></mat-divider>
-    <!-- Carousel End -->
-
-    <div>
-        <mat-grid-list class="tiles" cols="2" rowHeight="1.9:1.5 ">
-            <mat-grid-tile [ngStyle]="{'background': 'url(' + tile.url + ')'}" *ngFor="let tile of tilesImgList">
-                <div>
-                    <img [src]="tile.url" loading="lazy" class="d-block w-100 tilesImg" lightbox alt="Loading..."  draggable="false">
-                </div>
-            </mat-grid-tile>
-        </mat-grid-list>
-    </div>
-    <!-- Parallax effect - background image -->
-    <div id="imgList" *ngFor="let i of imageList">
-        <div [ngStyle]="{ 'background-image': 'url(' + i.url + ')'}" loading="lazy" class="box1"></div>
-    </div>
-
-
 </body>
-
 
 </html>
