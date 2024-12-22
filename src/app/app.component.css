@@ -12,6 +12,17 @@ html {
     width: auto;
     image-rendering: inherit;
 }
+.titlediv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+
+    top: 0;
+    left: 0;
+    z-index: 1;  
+}
 
 mat-sidenav-conatiner,
 mat-sidenav-content,
@@ -154,19 +165,20 @@ mat-sidenav {
     text-decoration: none;
 }
 
-
 /* sidenav */
 
 .sidelink {
     font-family: "Roboto Condensed", sans-serif;
     text-transform: uppercase;
-    height: 50px;
-    color: rgb(194, 194, 194);
+    color: rgba(39, 39, 39, 0.40);
     vertical-align: middle;
 }
 
 .sidenavIcon {
-    padding-right: 10px;
+    padding-left: 10px;
+}
+.full-width{
+    color: #ffffffcc;
 }
 
 .iconimg {
