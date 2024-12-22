@@ -11,7 +11,6 @@ import { AngularFireAnalytics, AngularFireAnalyticsModule, CONFIG, ScreenTrackin
 import {MaterialModule} from './material/material.module'
 
 import { FlexLayoutModule } from '@angular/flex-layout';
-import {CrystalLightboxModule} from '@crystalui/angular-lightbox';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -46,8 +45,7 @@ import {BottomSheetNFT} from './app.component';
     ),
     AngularFireAnalyticsModule,
     AngularFireStorageModule,
-    AngularFirestoreModule,
-    CrystalLightboxModule
+    AngularFirestoreModule
   ],
   providers: [ScreenTrackingService,UserTrackingService,{ provide: CONFIG, useValue: {
     send_page_view: true,
