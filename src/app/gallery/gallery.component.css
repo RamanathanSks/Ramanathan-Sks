@@ -186,7 +186,7 @@ p {
 
 img {
     image-rendering: optimizeQuality;
-    border-radius: 15px;
+    border-radius: 11px;
     -webkit-user-select: none;
     user-select: none;
     -webkit-touch-callout: none;
@@ -449,6 +449,15 @@ p {
     background-size: cover;
 }
 
+.carousel-item img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 100vh;
+    max-width: 150vh;
+
+}
+
 * {
     scroll-behavior: smooth;
 }
@@ -480,6 +489,10 @@ img {
 }
 #carouselExampleFade{
     background: rgba(39, 39, 39, 0.87);
-    padding: 0.5cm 1cm 0.5cm 1cm;
+    padding: 0.2cm 0.6cm 0.5cm 0.6cm;
+    background-color: rgba(39, 39, 39, 0.87);
     
+}
+.carousel-indicators{
+    margin-bottom: 3.7cm;
 }

@@ -7,10 +7,10 @@ import { Component, OnInit,OnDestroy } from '@angular/core';
 })
 export class HomeComponent implements OnInit,OnDestroy {
   ngOnDestroy(): void {
-    console.log("Home Component Destroyed")
+    // console.log("Home Component Destroyed")
   }
   ngOnInit(): void {
-    console.log("Home Component Destroyed")
+    // console.log("Home Component Destroyed")
     
   }
   
