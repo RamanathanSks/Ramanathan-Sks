@@ -3,24 +3,23 @@
 
 This is the source code for my personal portfolio, showcasing my skills, projects, and experiences. The project is built using **Angular 16**, integrated with **Firebase** for hosting and backend services, and **Node.js** for server-side functionality.
 
-## ðŸš€ Deployed Application
+## 🚀 Deployed Application
 
-You can view the live version of my portfolio here: [Ramanathan Sks Portfolio](https://ramanathan-sks.web.app)
+You can view the live version of my portfolio here: [RamanathanSks 👀](https://ramanathan-sks.web.app)
 
 ---
 
-## ðŸ› ï¸ Tech Stack
+## 👨‍💻 Tech Stack
 
 - **Frontend**: Angular 16
 - **Backend**: Node.js
 - **Database**: Firebase Firestore
 - **Hosting**: Firebase Hosting
-- **Authentication**: Firebase Authentication
 - **Other Integrations**: Firebase Cloud Functions
 
 ---
 
-## ðŸ“‚ Project Structure
+## 📂 Project Structure
 
 ```
 |-- src/
@@ -37,7 +36,7 @@ You can view the live version of my portfolio here: [Ramanathan Sks Portfolio](h
 
 ---
 
-## ðŸ”§ Setup and Installation
+## 🔧 Setup and Installation
 
 1. **Clone the Repository**
    ```bash
@@ -86,23 +85,20 @@ You can view the live version of my portfolio here: [Ramanathan Sks Portfolio](h
 
 ---
 
-## ðŸŒŸ Features
+## 🌟 Features
 
 - Interactive UI built with Angular 16.
 - Hosted on Firebase for fast and reliable delivery.
 - Firebase Firestore for real-time database needs.
-- Firebase Authentication for secure login functionality.
-- Cloud Functions using Node.js for server-side logic.
-
 ---
 
-## ðŸ›¡ï¸ License
+## 🛡 License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
 
-## ðŸ‘¨â€ðŸ’» Author
+## 🙋🏻‍♂️ Author
 
 **Ramanathan Sks**  
-Feel free to reach out via [LinkedIn](https://www.linkedin.com/in/ramanathan-sks) or email at `your-email@example.com`.
+Feel free to reach out via [LinkedIn](https://www.linkedin.com/in/ramanathan-sks) or email at `ramanathan.sks@gmail.com`.
