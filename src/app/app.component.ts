@@ -19,7 +19,7 @@ import { environment } from 'src/environments/environment';
   styleUrls: ['./app.component.css'],
 
 })
-export class AppComponent implements OnInit ,OnDestroy{
+export class AppComponent implements OnInit, OnDestroy {
   title = 'Ramanathan';
   name: string = "";
   isOpen = false;
@@ -33,14 +33,14 @@ export class AppComponent implements OnInit ,OnDestroy{
   loader: boolean = false;
   color: ThemePalette = 'primary';
   mode: ProgressBarMode = 'indeterminate';
-  githuburl:string;
-  codeurl:string;
-  issueurl:string;
-  instagramurl:string;
-  facebookurl:string;
-  twitterurl:string;
-  fhpixurl:string;
-  nfturl:string;
+  githuburl: string;
+  codeurl: string;
+  issueurl: string;
+  instagramurl: string;
+  facebookurl: string;
+  twitterurl: string;
+  fhpixurl: string;
+  nfturl: string;
   CarouselSub!: Subscription;
   TilesSub!: Subscription;
   ImageListSub!: Subscription;
@@ -51,19 +51,19 @@ export class AppComponent implements OnInit ,OnDestroy{
     public dialog: MatDialog,
     private route: Router,
     private _snackBar: MatSnackBar) {
-    this.githuburl=environment.GITHUB_URL;
-    this.codeurl=environment.CODE_URL;
-    this.issueurl=environment.ISSUE_URL;
-    this.instagramurl=environment.INSTAGRAM_URL;
-    this.facebookurl=environment.FACEBOOK_URL;
-    this.fhpixurl=environment.FHPIX_URL;
-    this.twitterurl=environment.TWITTER_URL;
-    this.nfturl=environment.NFT_URL;
+    this.githuburl = environment.GITHUB_URL;
+    this.codeurl = environment.CODE_URL;
+    this.issueurl = environment.ISSUE_URL;
+    this.instagramurl = environment.INSTAGRAM_URL;
+    this.facebookurl = environment.FACEBOOK_URL;
+    this.fhpixurl = environment.FHPIX_URL;
+    this.twitterurl = environment.TWITTER_URL;
+    this.nfturl = environment.NFT_URL;
     if (this.imgser.onFirstLoad) {
       this.imgser.onFirstLoad = false;
     }
   }
-  
+
   Connect() {
     this._bottomSheet.open(BottomSheet);
   }
@@ -105,7 +105,7 @@ export class AppComponent implements OnInit ,OnDestroy{
 
   }
 
-  
+
 
 
   ngOnDestroy(): void {
@@ -114,7 +114,7 @@ export class AppComponent implements OnInit ,OnDestroy{
     this.TilesSub.unsubscribe();
     this.ImageListSub.unsubscribe();
     this.CardSub.unsubscribe();
-    
+
   }
   getAllData() {
     this.CarouselSub = this.imgser.getCarouselObs$().subscribe(sub => {
@@ -123,11 +123,11 @@ export class AppComponent implements OnInit ,OnDestroy{
         this.TilesSub = this.imgser.getTitlesObs$().subscribe(sub => {
           if (sub) {
             // console.log("getTitlesObs success");
-            this.ImageListSub=this.imgser.getImgageObs$().subscribe(sub=>{
-              if(sub){
+            this.ImageListSub = this.imgser.getImgageObs$().subscribe(sub => {
+              if (sub) {
                 // console.log("getImgageObs success");
-                this.CardSub=this.imgser.getCardImgObs$().subscribe(sub=>{
-                  if(sub){
+                this.CardSub = this.imgser.getCardImgObs$().subscribe(sub => {
+                  if (sub) {
                     // console.log("Data Updated");
                     this.loader = true;
                   }
@@ -199,10 +199,10 @@ export class AppComponent implements OnInit ,OnDestroy{
   selector: 'barcode',
   templateUrl: './barcodeDialog.html',
 })
-export class barcodeDialog { 
-  instagramurl:string;
-  constructor(){
-    this.instagramurl=environment.INSTAGRAM_URL;
+export class barcodeDialog {
+  instagramurl: string;
+  constructor() {
+    this.instagramurl = environment.INSTAGRAM_URL;
   }
 }
 

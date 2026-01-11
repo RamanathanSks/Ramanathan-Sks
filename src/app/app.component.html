@@ -1,18 +1,18 @@
 <html>
 <!-- SideNav Content -->
 <mat-sidenav-container>
-    <mat-sidenav 
-    (mouseleave)="sidenav.toggle()"
-    #sidenavList class="sidenavList" #sidenav role="navigation" mode="over" position="start">
+    <mat-sidenav (mouseleave)="sidenav.toggle()" #sidenavList class="sidenavList" #sidenav role="navigation" mode="over"
+        position="start">
 
         <div style="height: 200px;"></div>
         <!-- SideNav List -->
         <mat-list>
             <mat-divider></mat-divider>
             <br>
-            <mat-list-item  matRipple class="parent">
+            <mat-list-item matRipple class="parent">
                 <div mat-line class="sidelink" routerLink=''>
-                    <span mat-list-icon><img class="iconimg sidenavIcon" draggable="false" src="https://img.icons8.com/plumpy/25/000000/home-page.png" />&nbsp;</span>
+                    <span mat-list-icon><img class="iconimg sidenavIcon" draggable="false"
+                            src="https://img.icons8.com/plumpy/25/000000/home-page.png" />&nbsp;</span>
                     <span class="full-width">HOME</span>
                 </div>
             </mat-list-item>
@@ -20,7 +20,8 @@
             <mat-list-item matRipple class="parent">
 
                 <div mat-line class="sidelink" routerLink='Gallery'>
-                    <span mat-list-icon><img class="iconimg sidenavIcon" draggable="false" src="https://img.icons8.com/plumpy/25/000000/image-gallery.png" />&nbsp;</span>
+                    <span mat-list-icon><img class="iconimg sidenavIcon" draggable="false"
+                            src="https://img.icons8.com/plumpy/25/000000/image-gallery.png" />&nbsp;</span>
                     <span class="full-width">GALLERY</span>
                 </div>
             </mat-list-item>
@@ -28,7 +29,8 @@
             <mat-list-item matRipple class="parent">
 
                 <div mat-line class="sidelink" routerLink='About'>
-                    <span mat-list-icon><img class="iconimg sidenavIcon" draggable="false" src="https://img.icons8.com/plumpy/25/000000/about.png" />&nbsp;</span>
+                    <span mat-list-icon><img class="iconimg sidenavIcon" draggable="false"
+                            src="https://img.icons8.com/plumpy/25/000000/about.png" />&nbsp;</span>
                     <span class="full-width">ABOUT</span>
 
                 </div>
@@ -37,15 +39,17 @@
             <mat-list-item matRipple>
 
                 <div mat-line class="sidelink" (click)="OpenNFTSheet()">
-                    <span mat-list-icon><img class="iconimg sidenavIcon" draggable="false" src="https://img.icons8.com/pastel-glyph/25/000000/nft.png" />&nbsp;</span>
+                    <span mat-list-icon><img class="iconimg sidenavIcon" draggable="false"
+                            src="https://img.icons8.com/pastel-glyph/25/000000/nft.png" />&nbsp;</span>
                     <span class="full-width">NFT</span>
                 </div>
             </mat-list-item>
-            
+
             <mat-list-item matRipple>
 
                 <div mat-line class="sidelink" (click)="Connect()">
-                    <span mat-list-icon><img class="iconimg sidenavIcon" draggable="false" src="https://img.icons8.com/plumpy/25/000000/mail-contact.png" />&nbsp;</span>
+                    <span mat-list-icon><img class="iconimg sidenavIcon" draggable="false"
+                            src="https://img.icons8.com/plumpy/25/000000/mail-contact.png" />&nbsp;</span>
                     <span class="full-width">CONTACT </span>
                 </div>
             </mat-list-item>
@@ -55,54 +59,39 @@
         <br>
         <mat-divider></mat-divider>
 
-        <br/>
+        <br />
         <!-- Siednav Footer -->
         <footer>
             <div class="container">
 
                 <span class="text-muted">
                     <a class="sidenavSM" target="_blank" [href]="githuburl">
-                        <img
-                            src="https://img.icons8.com/fluent/35/000000/github.png" 
-                            draggable="false" 
-                            class="iconimg"
-                        />
+                        <img src="https://img.icons8.com/fluent/35/000000/github.png" draggable="false"
+                            class="iconimg" />
                     </a>
                 </span>&nbsp;&nbsp;
                 <span class="text-muted">
                     <a class="sidenavSM" target="_blank" [href]="twitterurl">
-                        <img
-                            src="https://img.icons8.com/fluent/42/000000/twitterx.png" 
-                            draggable="false" 
-                            class="iconimg"
-                        />
+                        <img src="https://img.icons8.com/fluent/42/000000/twitterx.png" draggable="false"
+                            class="iconimg" />
                     </a>
                 </span>&nbsp;&nbsp;
                 <span class="text-muted">
                     <a class="sidenavSM" target="_blank" [href]="instagramurl">
-                        <img
-                                src="https://img.icons8.com/fluent/35/000000/instagram-new.png" 
-                                draggable="false" 
-                                class="iconimg"
-                        />
+                        <img src="https://img.icons8.com/fluent/35/000000/instagram-new.png" draggable="false"
+                            class="iconimg" />
                     </a>
                 </span>&nbsp;&nbsp;
                 <span class="text-muted">
                     <a class="sidenavSM" target="_blank" [href]="facebookurl">
-                        <img
-                            src="https://img.icons8.com/fluent/35/000000/facebook-new.png" 
-                            draggable="false" 
-                            class="iconimg"
-                        />
+                        <img src="https://img.icons8.com/fluent/35/000000/facebook-new.png" draggable="false"
+                            class="iconimg" />
                     </a>
                 </span>&nbsp;&nbsp;
                 <span class="text-muted">
                     <a class="sidenavSM" target="_blank" [href]="fhpixurl">
-                        <img
-                            src="https://img.icons8.com/windows/30/000000/500px-new.png" 
-                            draggable="false" 
-                            class="iconimg"
-                        />
+                        <img src="https://img.icons8.com/windows/30/000000/500px-new.png" draggable="false"
+                            class="iconimg" />
                     </a>
                 </span>
             </div>
@@ -114,21 +103,21 @@
     <mat-sidenav-content>
         <mat-toolbar class="toolbar mat-elevation-z6" *ngIf="offsetFlag" matRipple>
             <!-- SideNav Menu -->
-            <div >
+            <div>
                 <button mat-icon-button (mouseenter)="sidenav.toggle()">
-                    <img  
-                    draggable="false"
-                    class="iconimg menuicon" 
-                    src="https://img.icons8.com/external-jumpicon-glyph-ayub-irawan/25/000000/external-_17-user-interface-jumpicon-(glyph)-jumpicon-glyph-ayub-irawan.png"/>
+                    <img draggable="false" class="iconimg menuicon"
+                        src="https://img.icons8.com/external-jumpicon-glyph-ayub-irawan/25/000000/external-_17-user-interface-jumpicon-(glyph)-jumpicon-glyph-ayub-irawan.png" />
                 </button>
             </div>
             <!-- Title imgage -->
             <div class="titlediv">
-                <a routerLink=''><span class="title"> <img class="titleimg" src="https://firebasestorage.googleapis.com/v0/b/ram-port.appspot.com/o/name.jpeg?alt=media&token=7a43be4a-f41e-4eb2-8731-f96bb8b4bdfc"  alt="RAMANATHAN"></span></a>
+                <a routerLink=''><span class="title"> <img class="titleimg"
+                            src="https://firebasestorage.googleapis.com/v0/b/ram-port.appspot.com/o/name.jpeg?alt=media&token=7a43be4a-f41e-4eb2-8731-f96bb8b4bdfc"
+                            alt="RAMANATHAN"></span></a>
             </div>
             <!-- Toolbar Menu -->
-            <div >
-                <ul  class="nav-item">
+            <div>
+                <ul class="nav-item">
                     <!-- <li routerLink='Home'>
                         <a class="fontcl">HOME</a>
                     </li>
@@ -147,7 +136,7 @@
                     </li> -->
 
                     <li class="more" [matMenuTriggerFor]="menu">
-                        <span><mat-icon >more_vert</mat-icon></span>
+                        <span><mat-icon>more_vert</mat-icon></span>
                     </li>
                 </ul>
             </div>
@@ -157,14 +146,14 @@
         <mat-menu #menu="matMenu">
             <a [href]="codeurl" target="_blank" rel="noopener noreferrer">
                 <button mat-menu-item>
-                    <img class="iconimg" src="https://img.icons8.com/material-outlined/28/000000/source-code.png"/>
+                    <img class="iconimg" src="https://img.icons8.com/material-outlined/28/000000/source-code.png" />
                     &nbsp;
                     <span>Code</span>
                 </button>
             </a>
             <a [href]="issueurl" target="_blank" rel="noopener noreferrer">
                 <button mat-menu-item>
-                    <img class="iconimg" src="https://img.icons8.com/material-outlined/28/000000/github.png"/>
+                    <img class="iconimg" src="https://img.icons8.com/material-outlined/28/000000/github.png" />
                     &nbsp;
                     <span>Issues</span>
                 </button>
@@ -174,7 +163,8 @@
         <mat-menu #beforeMenu="matMenu" xPosition="before">
             <a [href]="nfturl" target="_blank" rel="noopener noreferrer">
                 <button mat-menu-item (mouseleave)="closeNFTmenu()">
-                    <img src="https://storage.googleapis.com/opensea-static/Logomark/Logomark-Blue.png" height="30px" width="auto"/>
+                    <img src="https://storage.googleapis.com/opensea-static/Logomark/Logomark-Blue.png" height="30px"
+                        width="auto" />
                     &nbsp;
                     <span>OpenSea</span>
                 </button>
@@ -183,8 +173,9 @@
 
         <!-- Main -->
         <main>
-            <span><mat-progress-bar *ngIf="!loader" style="height: 7px;" class="example-margin;" [color]="color" [mode]="mode">
-            </mat-progress-bar></span>
+            <span><mat-progress-bar *ngIf="!loader" style="height: 7px;" class="example-margin;" [color]="color"
+                    [mode]="mode">
+                </mat-progress-bar></span>
             <router-outlet *ngIf="loader">
 
             </router-outlet>
@@ -198,60 +189,40 @@
             <div class="container">
 
                 <span class="text-muted" matTooltip="github">
-                        <a class="smlnk" target="_blank" [href]="githuburl">
-                            <img
-                                src="https://img.icons8.com/fluent/42/000000/github.png" 
-                                draggable="false" 
-                                alt="GITHUB"
-                                class="iconimg"
-                            />
-                        </a>
-                    </span>&nbsp;&nbsp;
+                    <a class="smlnk" target="_blank" [href]="githuburl">
+                        <img src="https://img.icons8.com/fluent/42/000000/github.png" draggable="false" alt="GITHUB"
+                            class="iconimg" />
+                    </a>
+                </span>&nbsp;&nbsp;
 
                 <span class="text-muted" matTooltip="Twitter/X">
-                        <a class="smlnk" target="_blank" [href]="twitterurl">
-                            <img
-                                src="https://img.icons8.com/fluent/42/000000/twitterx.png" 
-                                draggable="false" 
-                                alt="Twitter/X"
-                                class="iconimg"
-                            />
-                        </a>
-                    </span>&nbsp;&nbsp;
+                    <a class="smlnk" target="_blank" [href]="twitterurl">
+                        <img src="https://img.icons8.com/fluent/42/000000/twitterx.png" draggable="false"
+                            alt="Twitter/X" class="iconimg" />
+                    </a>
+                </span>&nbsp;&nbsp;
 
                 <span class="text-muted">
-                        <a class="smlnk" >
-                            <img
-                                (mouseenter)="openbarcode()" 
-                                src="https://img.icons8.com/fluent/42/000000/instagram-new.png" 
-                                draggable="false" 
-                                alt="INSTAGRAM"
-                                class="iconimg"
-                            />
-                        </a>
-                    </span> &nbsp;&nbsp;
+                    <a class="smlnk">
+                        <img (mouseenter)="openbarcode()"
+                            src="https://img.icons8.com/fluent/42/000000/instagram-new.png" draggable="false"
+                            alt="INSTAGRAM" class="iconimg" />
+                    </a>
+                </span> &nbsp;&nbsp;
 
                 <span class="text-muted" matTooltip="facebook">
-                        <a class="smlnk" target="_blank" [href]="facebookurl">
-                            <img 
-                                src="https://img.icons8.com/fluent/42/000000/facebook-new.png" 
-                                draggable="false"
-                                alt="FACEBOOK"
-                                class="iconimg"
-                            />
-                        </a>
-                    </span> &nbsp;&nbsp;
+                    <a class="smlnk" target="_blank" [href]="facebookurl">
+                        <img src="https://img.icons8.com/fluent/42/000000/facebook-new.png" draggable="false"
+                            alt="FACEBOOK" class="iconimg" />
+                    </a>
+                </span> &nbsp;&nbsp;
 
                 <span class="text-muted" matTooltip="500px">
-                        <a class="smlnk" target="_blank" [href]="fhpixurl">
-                            <img 
-                                src="https://img.icons8.com/windows/37/000000/500px-new.png" 
-                                draggable="false"
-                                alt="500PX"
-                                class="iconimg"
-                            />
-                        </a>
-                    </span>
+                    <a class="smlnk" target="_blank" [href]="fhpixurl">
+                        <img src="https://img.icons8.com/windows/37/000000/500px-new.png" draggable="false" alt="500PX"
+                            class="iconimg" />
+                    </a>
+                </span>
             </div>
         </footer>
     </mat-sidenav-content>
@@ -260,6 +231,7 @@
 
 
 <!-- GoTop button -->
-<button *ngIf="!offsetFlag" matRipple id="myBtn" (click)="gotop()" matTooltip="Go Top"><mat-icon>keyboard_arrow_up</mat-icon></button>
+<button *ngIf="!offsetFlag" matRipple id="myBtn" (click)="gotop()"
+    matTooltip="Go Top"><mat-icon>keyboard_arrow_up</mat-icon></button>
 
 </html>
