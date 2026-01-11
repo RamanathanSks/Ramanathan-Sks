@@ -1,10 +1,19 @@
-<html>
 
 <body>
-
-
-    <p [routerLink]="['/Gallery']">Welcome..!, Get Started 👆🏻 </p>
-
+    <div class="container">
+        <div class="content">
+            <h1 class="heading varela-round-regular">Hi all, I'm Ram <span class="wave"><img alt="👋" draggable="false" src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/1f44b.png" style="height: 1em; width: 1em; margin: 0px 0.05em 0px 0.1em; vertical-align: -0.1em;"></span></h1>
+            <p class="description noto-sans-hk-description">A Passionate Software Engineer 🚀, An AWS Certified SDET | Experienced in CI/CD, Jenkins, Angular | Expertise in Java, Javascript, Selenium, Playwright and Cypress | Automation Testing Professional | Published Author | Passionate about Cloud & Problem Solving</p>
+            <div class="buttons">
+                <a (click)="Connect()" mat-fab extended class="button">Contact</a>
+                <a href="https://drive.google.com/file/d/1iX42SeA9e0ggbqg_qAgpHkGKr1cMXxyj/view?usp=sharing" mat-fab extended class="button" target="_blank">Resume</a>
+            </div>
+            
+        </div>
+        <div class="illustration">
+            <img [src]="imgurl" (load)="loadedImg()" alt="">
+        </div>
+       
+    </div>
+    
 </body>
-
-</html>

@@ -6,10 +6,10 @@ import { map } from 'rxjs/operators';
 import { MatSnackBar } from '@angular/material/snack-bar';
 
 import { ImageserviceService } from './imageservice.service';
-import { Router } from '@angular/router'
+import { Router } from '@angular/router';
 import { MatBottomSheet, MatBottomSheetRef } from '@angular/material/bottom-sheet';
 import { MatMenuTrigger } from '@angular/material/menu';
-import { AngularFireAnalytics } from '@angular/fire/analytics';
+import { AngularFireAnalytics } from '@angular/fire/compat/analytics';
 import { ThemePalette } from '@angular/material/core';
 import { ProgressBarMode } from '@angular/material/progress-bar';
 import { environment } from 'src/environments/environment';
@@ -120,26 +120,24 @@ export class AppComponent implements OnInit ,OnDestroy{
     this.CarouselSub = this.imgser.getCarouselObs$().subscribe(sub => {
       if (sub) {
         // console.log("getCarouselObs success");
+        this.TilesSub = this.imgser.getTitlesObs$().subscribe(sub => {
+          if (sub) {
+            // console.log("getTitlesObs success");
+            this.ImageListSub=this.imgser.getImgageObs$().subscribe(sub=>{
+              if(sub){
+                // console.log("getImgageObs success");
+                this.CardSub=this.imgser.getCardImgObs$().subscribe(sub=>{
+                  if(sub){
+                    // console.log("Data Updated");
+                    this.loader = true;
+                  }
+                });
+              }
+            });
+          }
+        });
       }
     });
-    this.TilesSub = this.imgser.getTitlesObs$().subscribe(sub => {
-      if (sub) {
-        // console.log("getTitlesObs success");
-      }
-    });
-    this.ImageListSub=this.imgser.getImgageObs$().subscribe(sub=>{
-      if(sub){
-        // console.log("getImgageObs success");
-        
-      }
-    });
-    this.CardSub=this.imgser.getCardImgObs$().subscribe(sub=>{
-      if(sub){
-        // console.log("Data Updated");
-        this.loader = true;
-      }
-    });
-    
   }
 
   offsetFlag = true;

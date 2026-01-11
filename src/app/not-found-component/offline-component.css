@@ -39,3 +39,6 @@ body {
         box-shadow: inset -3px 0px 0px transparent;
     }
 }
+body{
+    background-color: rgba(39, 39, 39, 0.87);
+}

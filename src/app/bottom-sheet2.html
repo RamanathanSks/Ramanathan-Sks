@@ -10,7 +10,7 @@
         .mat-list-icon {
             color: rgba(0, 0, 0, 0.54);
         }
-        
+
         a {
             text-decoration: none;
             color: black;
@@ -24,20 +24,17 @@
         <div mat-header>NFT</div>
 
         <mat-divider></mat-divider>
-        <br/>
-        <mat-list-item>
-            <mat-chip-list>
-                <a href="https://opensea.io/RamAki" target="_blank" rel="noopener noreferrer">
-                    <mat-chip>
-                        <mat-chip-avatar>
-                            <img src="https://storage.googleapis.com/opensea-static/Logomark/Logomark-Blue.png" height="24px" width="auto" />
-                        </mat-chip-avatar>
-                        OpenSea
-                    </mat-chip>
-                </a>
+        <br />
 
-            </mat-chip-list>
-        </mat-list-item>
+        <mat-chip-set aria-label="LinkedIn">
+            <a href="https://opensea.io/RamAki" target="_blank" rel="noopener noreferrer">
+                <mat-chip>
+                    <img matChipAvatar src="https://storage.googleapis.com/opensea-static/Logomark/Logomark-Blue.png"
+                        height="24px" width="auto" alt="linkedin" />
+                    OpenSea
+                </mat-chip>
+            </a>
+        </mat-chip-set>
 
     </mat-list>
 </body>

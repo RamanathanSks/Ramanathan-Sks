@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import { AngularFireStorage } from "@angular/fire/storage";
-import { AngularFirestore, AngularFirestoreCollection } from "@angular/fire/firestore";
+import { AngularFireStorage } from "@angular/fire/compat/storage";
+import { AngularFirestore, AngularFirestoreCollection } from "@angular/fire/compat/firestore";
 import { Observable, Subscriber } from 'rxjs';
 import { CARDS, GALLERY } from './Model/interface';
 import { TILES } from './Model/interface';

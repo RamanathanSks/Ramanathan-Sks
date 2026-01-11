@@ -1,19 +1,21 @@
 <html>
 <!-- SideNav Content -->
 <mat-sidenav-container>
-    <mat-sidenav (mouseleave)="sidenav.toggle()" #sidenavList class="sidenavList" #sidenav role="navigation" mode="over" position="start">
+    <mat-sidenav 
+    (mouseleave)="sidenav.toggle()"
+    #sidenavList class="sidenavList" #sidenav role="navigation" mode="over" position="start">
 
         <div style="height: 200px;"></div>
         <!-- SideNav List -->
         <mat-list>
             <mat-divider></mat-divider>
             <br>
-            <!-- <mat-list-item  matRipple class="parent">
+            <mat-list-item  matRipple class="parent">
                 <div mat-line class="sidelink" routerLink=''>
                     <span mat-list-icon><img class="iconimg sidenavIcon" draggable="false" src="https://img.icons8.com/plumpy/25/000000/home-page.png" />&nbsp;</span>
                     <span class="full-width">HOME</span>
                 </div>
-            </mat-list-item> -->
+            </mat-list-item>
 
             <mat-list-item matRipple class="parent">
 
@@ -44,7 +46,7 @@
 
                 <div mat-line class="sidelink" (click)="Connect()">
                     <span mat-list-icon><img class="iconimg sidenavIcon" draggable="false" src="https://img.icons8.com/plumpy/25/000000/mail-contact.png" />&nbsp;</span>
-                    <span class="full-width">CONNECT </span>
+                    <span class="full-width">CONTACT </span>
                 </div>
             </mat-list-item>
 

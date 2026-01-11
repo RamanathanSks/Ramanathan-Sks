@@ -1,34 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Varela+Round&display=swap&family=Noto+Sans+HK:wght@100..900');
+
+
+.varela-round-regular {
+  font-family: "Varela Round", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(225, 255, 255);
+}
+
+.noto-sans-hk-description{
+  font-family: "Noto Sans HK", serif;
+  font-optical-sizing: auto;
+  font-weight: 1.25rem;
+  font-style: normal;
+}
+
 body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80em;
-    background-color: #000;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 1cm;
+  padding-top: 0.3cm;
+  font-family: 'Arial', sans-serif;
+  background-color: rgba(39, 39, 39, 0.906);
+  color: #FFF;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 118vh;
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: sans-serif;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1.5s ease-out forwards;
+}
+
+.content {
+  max-width: 50%;
+  margin-right: 2cm;
+}
+
+.heading {
+  font-size: 45px;
+  margin-bottom: 0.5rem;
+}
+
+.wave {
+  display: inline-block;
+  animation: wave 1.2s infinite;
+}
+
+@keyframes wave {
+
+  0%,
+  100% {
+    transform: rotate(0deg);
   }
-  
-  p {
-    position: relative;
-    font-family: sans-serif;
-    text-transform: uppercase;
-    font-size: 2em;
-    letter-spacing: 4px;
-    overflow: hidden;
-    background: linear-gradient(90deg, #000, #fff, #000);
-    background-repeat: no-repeat;
-    background-size: 80%;
-    animation: animate 3s linear infinite;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+
+  50% {
+    transform: rotate(15deg);
   }
-  
-  @keyframes animate {
-    0% {
-      background-position: -500%;
-    }
-    100% {
-      background-position: 500%;
-    }
+}
+
+.description {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  margin: 1rem 0;
+}
+
+.buttons {
+  margin-top: 1rem;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  margin-right: 1rem;
+  background-color: #f5f5f500;
+  color: #FFF;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #00000044;
+}
+
+.icons {
+  margin-top: 1.5rem;
+}
+
+.icon {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin: 0 0.5rem;
+  border-radius: 50%;
+  background-color: #FF6A3D;
+  color: #FFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.icon:hover {
+  background-color: #FFA559;
+}
+
+.illustration {
+  max-width: 45%;
+  padding: 0rem;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1.5s ease-out 0.5s forwards;
+}
+
+
+.illustration img {
+  max-width: 60%;
+  height: auto;
+  margin-left: 3cm;
+  image-rendering: optimizeQuality;
+  border-radius: 5px;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
+}
+
+@media (max-width: 770px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+  }
+
+  .content,
+  .illustration {
+    max-width: 100%;
+    margin-right: 0;
+    padding: 10px 0px 0px 10px;
+  }
+
+
+  .illustration {
+    margin-top: 2rem;
+  }
+
+  .illustration img {
+    max-width: 60%;
+    margin-left: 0;
+    height: auto;
+    image-rendering: optimizeQuality;
+    border-radius: 5px;
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+
+
+  }
+
+  body {
+    padding-top: 0.3cm;
+    height: 125vh;
+  }
+}

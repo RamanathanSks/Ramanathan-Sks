@@ -18,7 +18,7 @@ export class GalleryComponent implements OnInit, OnDestroy {
   @HostListener('window:resize', ['$event'])
   onResize(event: Event) {
     this.innerWidth = window.innerWidth;
-    this.screenwidth = this.innerWidth > 1200 ? true : false;
+    this.screenwidth = this.innerWidth > 1300 ? true : false;
   }
   cardsimgList: CARDS[] = [];
   innerWidth: any = window.innerWidth;
@@ -69,7 +69,7 @@ export class GalleryComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
     this.cardsimgList = this.imgser.getCardImg();
     this.onload = true;
-
+    this.onResize(new Event("resize"));
     this.carouselImgList = this.imgser.getCarousel()
     this.tilesImgList = this.imgser.getTitles();
     this.imageList = this.imgser.getimgageLst();

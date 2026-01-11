@@ -10,7 +10,7 @@
         .mat-list-icon {
             color: rgba(0, 0, 0, 0.54);
         }
-        
+
         a {
             text-decoration: none;
             color: black;
@@ -21,68 +21,31 @@
 
 <body>
     <mat-list>
-        <div mat-header>Connect</div>
+        <div style="font-size: 1rem;" mat-header><b>Connect</b></div>
 
         <mat-divider></mat-divider>
-
-        <a [href]="mailLink" target="_blank" rel="noopener noreferrer">
-            <mat-list-item matRipple>
-                <mat-icon mat-list-icon><span class="material-icons">
-                    email
-                    </span></mat-icon>
-                <div mat-line>Mail</div>
-            </mat-list-item>
-        </a>
-
-        <!-- <mat-divider></mat-divider>
-
-        <mat-list-item>
-            <mat-icon mat-list-icon><span class="material-icons">
-                <img src="https://img.icons8.com/material/24/000000/resume--v1.png"/>
-                </span></mat-icon>
-            <div mat-line><a href="">Resume</a></div>
-        </mat-list-item> -->
-
+        <br />
+        <mat-chip-set aria-label="LinkedIn">
+            <a [href]="mailLink" target="_blank" rel="noopener noreferrer">
+                <mat-chip>
+                    <img matChipAvatar src="https://img.icons8.com/?size=100&id=XfrUdidkiVc7&format=png&color=000000" height="24px"
+                        width="auto" alt="Mail" />
+                    Mail
+                </mat-chip>
+            </a>
+        </mat-chip-set>
         <mat-divider></mat-divider>
-
-        <mat-list-item>
-            <mat-chip-list>
-                <a href="https://www.linkedin.com/in/ramanathan-sks/" target="_blank" rel="noopener noreferrer">
-                    <mat-chip>
-                        <mat-chip-avatar>
-                            <img src="https://img.icons8.com/fluency/25/000000/linkedin-circled.png" />
-                        </mat-chip-avatar>
-                        LinkedIn
-                    </mat-chip>
-                </a>
-                <!-- <a href="https://www.instagram.com/ramanathan_sks/" target="_blank" rel="noopener noreferrer">
-                    <mat-chip>
-                        <mat-chip-avatar>
-                            <img src="https://img.icons8.com/fluent/25/000000/instagram-new.png" draggable="false" alt="INSTAGRAM" />
-                        </mat-chip-avatar>
-                        Instagram
-                    </mat-chip>
-                </a>
-                <a href="https://www.facebook.com/ramakiphotograph" target="_blank" rel="noopener noreferrer">
-                    <mat-chip>
-                        <mat-chip-avatar>
-                            <img src="https://img.icons8.com/fluent/25/000000/facebook-new.png" draggable="false" alt="FACEBOOK" />
-                        </mat-chip-avatar>
-                        Facebook
-                    </mat-chip>
-                </a>
-
-                <a href="https://twitter.com/SksRamanathan" target="_blank" rel="noopener noreferrer">
-                    <mat-chip>
-                        <mat-chip-avatar>
-                            <img src="https://img.icons8.com/fluent/23/000000/twitter.png" draggable="false" alt="TWITTER" />
-                        </mat-chip-avatar>
-                        Twitter
-                    </mat-chip>
-                </a> -->
-            </mat-chip-list>
-        </mat-list-item>
-
+        <br />
+        <mat-chip-set aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/in/ramanathan-sks/" target="_blank" rel="noopener noreferrer">
+                <mat-chip>
+                    
+                    <img matChipAvatar src="https://img.icons8.com/?size=100&id=114445&format=png&color=000000" height="30px"
+                        width="auto" alt="linkedin" />
+                    LinkedIn
+                </mat-chip>
+            </a>
+        </mat-chip-set>
     </mat-list>
 </body>
 
